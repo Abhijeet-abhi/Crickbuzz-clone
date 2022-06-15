@@ -148,13 +148,96 @@ p,svg,div,h4,h2,a,span{
 
 .twit{
     display: flex;
-    border: 2px solid;
-}
-.twit>div{
-    width: 50%;
-    border: 2px solid red;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
 }
 .twit1{
     display: flex;
+    width: 60%;
+}
+.twit1>p{
+    margin: 0;
+}
+.twit1>p:nth-child(1){
+    font-size: 20px;
+}
+.twit1>p:nth-child(2){
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
+
+.twit2{
+    text-align: right;
+    width: 40%;
+}
+.twit2>svg{
+    padding-top: 5px;
+}
+
+
+.for_twits{
+    width: 94%;
+    height: 500px;
+    margin: auto;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.twit_main{
+    padding: 10px;
+}
+
+.twit_main_child1{
+    display: flex;
+}
+
+.tmc1{
+    width: 20%;
+}
+.tmc1>img{
+    border-radius: 100%;
+}
+.tmc2{
+    width: 30%;
+    font-size: 12px;
+}
+.tmc2>p:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+.tmc2>p:nth-child(2){
+    font-size: 10px;
+    color: gray;
+    margin: 0;
+    margin-top: 5px;
+}
+.tmc3{
+    width: 50%;
+    text-align: right;
+    margin-top: 0;
+}
+.twt1{
+    font-size: 12px;
+}
+
+.twit_main_child2{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.tmc4{
+    width: 18%;
+}
+.tmc4>svg{
+    margin: 0;
+}
+.tmc6{
+    width: 64%;
+    text-align: right;
+}
+.tmc6>p{
+    margin: 0;
+}
