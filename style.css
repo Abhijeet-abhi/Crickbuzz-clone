@@ -1,0 +1,160 @@
+/* ============== universal style=================== */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3E6E3;
+}
+p,svg,div,h4,h2,a,span{
+    background-color: white;
+}
+/* ============= style for main div (all_stories) =============== */
+.main{
+    width: 980px;
+    margin: auto;
+}
+
+/* ==================== style for subnav (for all pages) ===================== */
+.subNav{
+    display: flex;
+    border: 1px solid rgb(240, 238, 238);
+    text-align: center;
+}
+.subNav>p{
+    padding: 10px 0 10px 0;
+    margin: 0 20px 0 0;
+}
+#nav_high>a{
+    color: green;
+    font-weight: bold;
+}
+#nav_high{
+    padding-bottom: 0;
+    border-bottom: 3px solid green;
+}
+.subNav>p:nth-child(1){
+    margin-left: 20px;
+}
+.subNav>p>a{
+    color: black;
+    text-decoration: none;
+}
+
+/* ======== style for parent div (all_stories) ==========*/
+.parent{
+    width: 100%;
+    display: flex;
+}
+
+/* ================= style for child1 and child2 (all_stories) =============== */
+.child1{
+    width: 66%;
+    border-right: 1px solid rgb(240, 238, 238);
+}
+.child1_main{
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.news{
+    display: flex;
+    padding: 12px 0 12px 0;
+}
+.news_img{
+    width: 32%;
+}
+.news_text{
+    width: 68%;  
+}
+.news_img>img{
+    border-radius: 5px;
+}
+.news_text>p{
+    margin: 0;
+    padding: 5px 10px 5px 10px ;
+}
+.p1{
+    color: gray;
+    font-size: 12px;
+}
+.p2{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 10px 0 10px 0;
+}
+.p2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.p3{
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 10px 0 10px 0;
+}
+.p4{
+    color: gray;
+    font-size: 11px;
+}
+.cat{
+    text-decoration: none;
+    color: blue;
+}
+.cat:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.line{
+    margin: 0;
+    border-top: 1px solid rgb(239, 237, 237);
+}
+
+/* ===================== style for child2 (all_stories) ========================= */
+.child2{
+    width: 34%;
+}
+.child2_main{
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 30px;
+}
+.heading2{
+    color: green;
+}
+.p5{
+    font-size: 14px;
+}
+.p5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.more_photo_btn{
+    color: white;
+    background-color: teal;
+    padding: 8px 20px;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+}
+.photo_btn{
+    margin-top: 10px;
+}
+.text_align_center{
+    text-align: center;
+}
+
+
+.twit{
+    display: flex;
+    border: 2px solid;
+}
+.twit>div{
+    width: 50%;
+    border: 2px solid red;
+}
+.twit1{
+    display: flex;
+}
+
