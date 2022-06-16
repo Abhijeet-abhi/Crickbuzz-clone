@@ -82,4 +82,21 @@
 
 .emalbox+div{
     margin-top: 70px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.submitbtn{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.submitbtn>input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0px;
+    background-color:#009270;
+    border: none;
+    color: #FFF;
 }
