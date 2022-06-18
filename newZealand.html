@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="footer.css" />
     <style>
         .img {
             display: flex;
@@ -14,7 +16,7 @@
             align-items: center;
         }
 
-        p {
+        .p {
             color: gray;
             font-size: medium;
             width: 500px;
@@ -24,7 +26,7 @@
             width: 500px;
         }
 
-        #main {
+        #main2 {
             width: 80%;
             background-color: white;
             border: 1px solid black transparent;
@@ -56,12 +58,133 @@
 
 <body>
 
-    <div id="main">
+    <div id="container">
+
+        <div id="top">
+            <ul id="up">
+                <li><img src="https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.svg" alt=""></li>
+                <li><a href="#">Live Scores</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Archives</a></li>
+                <li><a href="#">News <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul>
+                            <li>All Stories</li>
+                            <li>Cricbuzz Plus</li>
+                            <li>Latest News</li>
+                            <li>Topics</li>
+                            <li>Spotlight</li>
+                            <li>Opinion</li>
+                            <li>Specials</li>
+                            <li>Stats & Analysis</li>
+                            <li>Interviews</li>
+                            <li>Live Blogs</li>
+                            <li>Harsha Bhogle</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Series <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul>
+                          <li>South Africa tour of India,2022</li>  
+                            <li> Australia tour of Sri Lanka, 2022 </li>
+                            <li> New Zealand of England,2022 </li>
+                            <li> Bangladesh tour of West Indies,2022 </li>
+                            <li> England tour of Netherlands,2022 </li>
+                            <li> England tour of Netherlands, 2022 </li>
+                            <li> T20 Blast 2022 </li>
+                            <li> Ranji Trophy 2021-22 </li>
+                            <li> ICC Cricket World Cup League Two 2019-23 </li>
+                            <li> All Series » </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Teams <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown" style="width: 400px;">
+                        <div>
+
+                            <ul>
+                                <h4 style="margin-top: 20px; color: black;">TEST TEAMS</h4>
+                                <li>India</li>
+                                <li>Ireland</li>
+                                <li>Pakistan</li>
+                                <li>Australia</li>
+                                <li>Sri lanka</li>
+                                <li>Bangladesh</li>
+                                <li>England</li>
+                                <li>West Indies</li>
+                                <li>South Africa</li>
+                                <li>Zimbabwe</li>
+                                <li>New Zealand</li>
+                                <li>Afganistan</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <h4 style="margin-top: 20px; color: black;">ASSOCIATE</h4>
+                                <li>Belgium</li>
+                                <li>Italy</li>
+                                <li>Botswana</li>
+                                <li>Iran</li>
+                                <li>Denmark</li>
+                                <li>Singapore</li>
+                                <li>Namibia</li>
+                                <li>Canada</li>
+                                <li>Uganda</li>
+                                <li>Malaysia</li>
+                                <li>Nepal</li>
+                                <li>Germany</li>
+                                <li>More..</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Videos <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul>
+                            <li>All videos</li>
+                            <li>Catagories</li>
+                            <li>Playlists</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Ranking <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul>
+                            <li>ICC Rankings Men</li>
+                            <li>ICC Rankings Women</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">More <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul>
+                            <li>World Test Championship</li>
+                            <li>World Cup Super League</li>
+                            <li>Quiz</li>
+                            <li>Photos</li>
+                            <li>Mobile Apps</li>
+                            <li>Careers</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><button id="btn"> Cricbuzz Plus</button></li>
+                <li id="search">
+                    <href="#" style="padding: 0px 12px;"><i class="fas  fa-search"></i>
+                </li>
+                <li id="signup">
+                    <href="#" style="padding: 0px 12px;"><i class="far fa-user-circle"></i>
+                </li>
+            </ul>
+        </div>
+
+    <div id="main2">
 
         <div>
             <h1>New Zealand tour of England, 2022
             </h1>
-            <p> 3 Tests . May 20 - Jun 27 </p>
+            <p class="p"> 3 Tests . May 20 - Jun 27 </p>
 
         </div>
 
@@ -75,10 +198,10 @@
 
         <div class="img"><img src="https://www.cricbuzz.com/a/img/v1/205x152/i1/c236039/cms-img.jpg" alt="">
             <h2>England include Jamie Overton for Leeds Test
-                <p> The 28-year-old, who will join his twin brother Craig in the squad, has been in excellent form in
+                <p class="p"> The 28-year-old, who will join his twin brother Craig in the squad, has been in excellent form in
                     the ongoing County Championship for league leaders Surrey
                 </p>
-                <p> Jun 16 2022</p>
+                <p  class="p"> Jun 16 2022</p>
             </h2>
 
 
@@ -98,10 +221,10 @@
             <h2>Devon Conway tests positive for COVID-19
 
 
-                <p> Conway will now have to begin his five days of isolation and New Zealand have not called for any
+                <p class="p"> Conway will now have to begin his five days of isolation and New Zealand have not called for any
                     replacements
                 </p>
-                <p> Jun 16 2022</p>
+                <p class="p"> Jun 16 2022</p>
             </h2>
 
         </div>
@@ -113,10 +236,10 @@
         <div class="img"><img src="https://www.cricbuzz.com/a/img/v1/205x152/i1/c236015/cms-img.jpg" alt="">
             <h2>
                 Bracewell, two support staff in isolation after testing positive for Covid-19
-                <p> The squad though received a boost in the form of Kane Williamson, who has rejoined the touring party
+                <p class="p"> The squad though received a boost in the form of Kane Williamson, who has rejoined the touring party
                     after recovering from Covid-19
                 </p>
-                <p> Jun 16 2022</p>
+                <p class="p"> Jun 16 2022</p>
             </h2>
 
         </div>
@@ -124,10 +247,10 @@
 
         <div class="img"><img src="https://www.cricbuzz.com/a/img/v1/205x152/i1/c236009/cms-img.jpg" alt="">
             <h2> England docked two WTC points for slow over-rate in Trent Bridge Test
-                <p> England have been docked two points and fined 40 per cent of their match fee after their win at
+                <p class="p"> England have been docked two points and fined 40 per cent of their match fee after their win at
                     Trent Bridge against New Zealand for maintaining a slow over-rate
                 </p>
-                <p> Jun 15 2022</p>
+                <p class="p"> Jun 15 2022</p>
             </h2>
 
         </div>
@@ -135,9 +258,9 @@
 
         <div class="img"><img src="https://www.cricbuzz.com/a/img/v1/205x152/i1/c236007/cms-img.jpg" alt="">
             <h2>'Plant it in the stands - just did what the captain said'
-                <p> Jonny Bairstow reveals England's run chase plan after the hosts chased down 299 in only 50 overs on the final day of the Trent Bridge Test
+                <p class="p"> Jonny Bairstow reveals England's run chase plan after the hosts chased down 299 in only 50 overs on the final day of the Trent Bridge Test
                 </p>
-                <p> Jun 15 2022</p>
+                <p class="p"> Jun 15 2022</p>
             </h2>
 
         </div>
@@ -145,11 +268,38 @@
 
 
     </div>
+    <div class="footer">
+        <div id="all">
+            <div>
+                <img src="https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.svg" alt="">
+            </div>
+            <div>
+                <h3>MOBILE SITE & APPS</h3>
+                <p><i class="fa-light fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;m.cricbuzz.com</p>
+                <p><i class="fa-brands fa-android"></i>&nbsp;&nbsp;&nbsp;Android</p>
+                <p><i class="fa-brands fa-apple"></i>&nbsp;&nbsp;&nbsp;&nbsp;Apple</p>
+            </div>
+            <div>
+                <h3>FOLLOW US ON</h3>
+                <p><i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;Facebook</p>
+                <p><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;twitter</p>
+                <p><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;Youtube</p>
+                <p><i class="fa-brands fa-pinterest-p"></i>&nbsp;&nbsp;&nbsp;Pinterest</p>
+            </div>
+            <div>
+                <h3>COMPANY</h3>
+                <p>Careers</p>
+                <p>Advertise</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Cricbuzz TV Ads</p>
+            </div>
+    
+        </div>
+        <p>© 2022 Cricbuzz.com, Times Internet Limited. All rights reserved | The Times of India | Navbharat Times</p>
+    </div>
+    <div class="copyright"></div>
 </body>
 
 </html>
 
-<script>
-
-
-</script>
