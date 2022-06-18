@@ -202,3 +202,25 @@
 
 
 
+
+
+ @media all and (min-width:768px) and (max-width:1023px){
+    nav{
+        width: 98%;
+    }
+
+    #container{
+        width: 98%;
+    }
+ }
+
+
+ @media all and (min-width:320px) and (max-width:767px){
+    nav{
+        width: 98%;
+    }
+
+    #container{
+        width: 98%;
+    }
+ }
