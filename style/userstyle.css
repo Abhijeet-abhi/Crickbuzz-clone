@@ -200,7 +200,8 @@
 #plans{
     display: flex;
     justify-content: space-evenly;
-
+    flex-wrap: wrap;
+    gap: 10px;
 }
 #plans>div{
     width: 30%;
@@ -211,6 +212,9 @@
     display: flex;
     box-shadow: 1px 1px 3px #ccc, -1px -1px 3px #ccc;
     border-radius: 3px;
+}
+#plans>div>div:hover{
+    cursor: pointer;
 }
 #plans>div>div>div{
     padding: 20px 5px;
@@ -298,4 +302,14 @@
         display: none;
     }
 
+    .benifitbox .benifits>div{
+        width: 46%;
+    }
+    #plans>div{
+        width: 80%;
+   
+    }
+    .benifitbox .benifits>div img{
+        width: 100px;
+    }
 }
