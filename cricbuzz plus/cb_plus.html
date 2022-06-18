@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../news/style.css">
+    <link rel="stylesheet" href="cb_plus.css">
+    <style>
+        .wdth{
+            min-width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cbp">
+            <div class="cbp1">
+                <h2>Get 15 Subscriptions with 1 Plan and save INR 10000!</h2>
+                <p>Cricbuzz Plus + Times Prime</p>
+                <h1>Annual Combo Plan</h1>
+                <button class="unlk_btn"><a href="cb_plus1.html">Unlock Now For INR 999</a></button>
+            </div>
+            <div class="cbp2">
+                <img src="https://www.cricbuzz.com/a/img/v1/272x204/i1/c235844/hero_plan.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="child1" style="width: 100%;">
+            <div class="child1_main">
+                <h2 class="heading blk mt20">Cricbuzz Plus</h2>
+                <div id="append_data" class="mt10">
+                    <!-- append your box here -->
+
+                
+                    <!-- your box end here -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+    //function for display cricket news
+function displayNewsData(data){
+    data.forEach(function(ele){
+         let news_div=document.createElement("div")
+         news_div.setAttribute("class","news")
+             let news_img=document.createElement("div")
+             news_img.setAttribute("class","news_img")
+                 let img=document.createElement("img")
+                 img.setAttribute("src",ele.image)
+                 img.setAttribute("class","wdth")
+            news_img.append(img)
+             let news_text=document.createElement("div")
+             news_text.setAttribute("class","news_text")
+                let p1=document.createElement("p")
+                p1.setAttribute("class","p1 blk bld")
+                p1.innerText=ele.p1
+                let p2=document.createElement("p")
+                p2.setAttribute("class","p2 blk")
+                p2.innerText=ele.p2
+                let p3=document.createElement("p")
+                p3.setAttribute("class","p3")
+                p3.innerText=ele.p3
+                let p4=document.createElement("p")
+                p4.setAttribute("class","p4")
+                p4.innerText=ele.p4
+            news_text.append(p1,p2,p3,p4)
+         let hr=document.createElement("hr")
+         hr.setAttribute("class","line")
+
+         news_div.append(news_img,news_text)
+         document.querySelector("#append_data").append(news_div,hr)
+    });
+}
+
+let dataForNews=[
+    {image:"https://www.cricbuzz.com/a/img/v1/245x186/i1/c236159/the-imperial-phase-of-joe-root.jpg",p1:"REFLECTIONS",p2:"The Imperial phase of Joe Root",p3:"Joe Root is a great player - we can say that now, and start to wonder just how far he might go",p4:"5h ago"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c235864/once-a-test-specialist-hazlew.jpg",p1:"THINK TANK",p2:"Hard to hit: How Test specialists are turning over a new leaf in T20 bowling",p3:"The latest answer to counter batting domination was always right in front of our eyes. But why has it come to the forefront now?",p4:"1d ago"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c232158/gujarat-titans-have-recorded-s.jpg",p1:"THINK TANK",p2:"Why Gujarat Titans and SunRisers Hyderabad are greater than sum of their parts",p3:"After having a middling day at the IPL auction, both GT and SRH have defied expectations and put on a series of impressive performances. We take a detailed look at how they are able to stand on their own against much stronger oppositions on paperAfter having a middling day at the IPL auction, both GT and SRH have defied expectations and put on a series of impressive performances. We take a detailed look at how they are able to stand on their own against much stronger oppositions on paper",p4:"Apr 27 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c235608/shane-bond-meets-the-local-pre.jpg",p1:"CRICBUZZ REWIND",p2:"Live and Let Fly: Shane Bond's unforgettable club season in Cumbria",p3:"In the summer of 1999, the chairman of an out-of-luck club took a gamble on an unknown 23-year-old New Zealander, with spectacular results",p4:"Jun 10 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c235420/theres-a-reason-why-marcus-co.jpg",p1:"DIALOGUE ROOM",p2:"The Marcus behind 'Stoin'",p3:"The larger-than-life and fun-loving 'Stoin' or the sensitive and deep-thinking Marcus: which one's the real Marcus Stoinis? In a candid chat with Cricbuzz, the Australian all-rounder opens up on the 'two different types of people' he is, the big role his father played in how he approaches life and cricket, and more",p4:"Jun 06 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c233589/from-ipl-final-last-year-to-th.jpg",p1:"THINK TANK",p2:"Why KKR have flattered to deceive",p3:"Having emerged strong out of the mega auction, KKR now sit seventh on the points table after losing seven of their 12 games thus far. And a spot in the Playoffs feel like a long haul away. R Prasanna looks into what's going wrong for the franchise this year",p4:"May 12 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c235266/the-victorious-gujarat-titans.jpg",p1:"DIALOGUE ROOM",p2:"Behind the scenes of Gujarat Titans' IPL win with Gary Kirsten",p3:"How a team that was short on 'rockstars' overcame the odds with good leadership - from the owners down to the captain",p4:"Jun 02 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c234836/mental-fatigue-or-shot-selecti.jpg",p1:"THINK TANK",p2:"Kohli of 2018 vs 2022: What's changed with his technique",p3:"An illustrative and comparative assessment of what's changed in Virat Kohli's game and what could be going wrong for him in the last two and a half years, a period during which he hasn't hit an international hundred",p4:"May 25 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c234698/the-74-game-season-has-left-ev.jpg",p1:"REFLECTIONS",p2:"Why a 74-match IPL is ripe for satire",p3:"The extended 2022 IPL has left everyone exhausted - except, that is, for the commercial arm. What are we to make of this exercise in late-stage capitalism as it feels more and more like a second division club competition?",p4:"May 24 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c234457/he-may-be-in-the-twilight-of-h.jpg",p1:"DIALOGUE ROOM",p2:"The Captain's journal ft. Faf du Plessis",p3:"He may be in the twilight of his career, but the respected South African is still finding meaning in cricket - largely through his journey of leadership. He speaks about his experiences with RCB this season in an exclusive interview",p4:"May 21 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c234025/livingstone-has-been-in-fine-t.jpg",p1:"DIALOGUE ROOM",p2:"'Over the last couple of years, I've channeled my six-hitting ability the right way'",p3:"In an exclusive interview, Livingstone provides a peek into his six-hitting prowess, his uncluttered mind and his IPL experiences",p4:"May 16 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c233079/david-warner-should-stand-as-t.jpg",p1:"REFLECTIONS",p2:"The Bull in winter",p3:"Warner's was a career born in T20. He was 'the person thrown out there', the one who legitimised it by reverse-engineering a path to Test cricket",p4:"May 07 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c232685/ferguson-is-currently-plying-h.jpg",p1:"DIALOGUE ROOM",p2:"'I get excited to see express young bowlers like Umran Malik in IPL'",p3:"One of the quickest bowlers in the world, Lockie Ferguson talks about his love for fast bowling, aggression, workload management, and more in an exclusive interview",p4:"May 02 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c231869/he-made-six-hitting-the-norm-i.jpg",p1:"PEOPLE WHO CHANGED IPL",p2:"Chris Gayle: IPL's Six Appeal",p3:"In this new miniseries, we revisit how a few people influenced the Indian Premier League in everlasting fashion. First up is Chris Gayle...",p4:"Apr 23 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c231594/the-men-behind-the-planning-ha.jpg",p1:"THINK TANK",p2:"Making sense of Mumbai Indians' IPL 2022 struggles",p3:"The five-time champions are winless in six games at the start of the season, an unprecedented situation for a team with an impeccable pedigree",p4:"Apr 20 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c231132/under-flemings-coaching-csk.jpg",p1:"THINK TANK",p2:"The Stephen Fleming way",p3:"Few coaches have been able to build and maintain a reputation quite like Fleming. What makes him special and different? R Prasanna recounts his experiences of working alongside him and gives a low-down",p4:"Apr 16 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c230885/en-vazhi-thani-vazhi-the.jpg",p1:"DIALOGUE ROOM",p2:"The theory of everything, with Venkatesh Iyer",p3:"Venkatesh Iyer, the rising star of KKR over the past year, opens up about his very South Indian upbringing in Indore, and how Rajinikanth helped him get through the toughest of times",p4:"Apr 13 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c230581/buttler-has-already-struck-a-c.jpg",p1:"REFLECTIONS",p2:"Jos Buttler - lost or found?",p3:"Has Jos Buttler been lost to Test match cricket, or has he, at last, found his role as a preeminent white ball batter?",p4:"Apr 10 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c230280/du-plessis-is-leading-rcbs-qu.jpg",p1:"THINK TANK",p2:"What makes Faf tick as a captain",p3:"R Prasanna looks back at his time alongside Faf du Plessis as the Proteas analyst and tells us why he could make RCB's dream come true this year",p4:"Apr 07 2022"},
+    ]
+    displayNewsData(dataForNews)
+</script>

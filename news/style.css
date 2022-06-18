@@ -1,0 +1,246 @@
+/* ============== universal style=================== */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #E3E6E3; */
+}
+p,svg,div,h4,h2,a,span{
+    background-color: white;
+}
+ul,li,a,img,i,href{
+    background-color: transparent;
+    }
+/* ============= style for all pages =============== */
+.main{
+    width: 980px;
+    margin: auto;
+}
+
+/* ==================== style for subnav (for all pages) ===================== */
+.subNav{
+    display: flex;
+    border: 1px solid rgb(240, 238, 238);
+    text-align: center;
+}
+.subNav>p{
+    padding: 10px 0 10px 0;
+    margin: 0 20px 0 0;
+}
+#nav_high>a{
+    color: green;
+    font-weight: bold;
+}
+#nav_high{
+    padding-bottom: 0;
+    border-bottom: 3px solid green;
+}
+.subNav>p:nth-child(1){
+    margin-left: 20px;
+}
+.subNav>p>a{
+    color: black;
+    text-decoration: none;
+}
+
+/* ======== style for parent div (all pages) ==========*/
+.parent{
+    width: 100%;
+    display: flex;
+}
+
+/* ================= style for child1 and child2 (all pages) =============== */
+.child1{
+    width: 66%;
+    border-right: 1px solid rgb(240, 238, 238);
+}
+.child1_main{
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.news{
+    display: flex;
+    padding: 12px 0 12px 0;
+}
+.news_img{
+    width: 32%;
+}
+.news_text{
+    width: 68%;  
+}
+.news_img>img{
+    border-radius: 5px;
+}
+.news_text>p{
+    margin: 0;
+    padding: 5px 10px 5px 10px ;
+}
+.p1{
+    color: gray;
+    font-size: 12px;
+}
+.p2{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 10px 0 10px 0;
+}
+.p2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.p3{
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 10px 0 10px 0;
+}
+.p4{
+    color: gray;
+    font-size: 11px;
+}
+.cat{
+    text-decoration: none;
+    color: blue;
+}
+.cat:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.line{
+    margin: 0;
+    border-top: 1px solid rgb(239, 237, 237);
+}
+
+/* ===================== style for child2 (all pages) ========================= */
+.child2{
+    width: 34%;
+}
+.child2_main{
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 30px;
+}
+.heading2{
+    color: green;
+}
+.p5{
+    font-size: 14px;
+}
+.p5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.more_photo_btn{
+    color: white;
+    background-color: teal;
+    padding: 8px 20px;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+}
+.photo_btn{
+    margin-top: 10px;
+}
+.text_align_center{
+    text-align: center;
+}
+
+
+.twit{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.twit1{
+    display: flex;
+    width: 60%;
+}
+.twit1>p{
+    margin: 0;
+}
+.twit1>p:nth-child(1){
+    font-size: 20px;
+}
+.twit1>p:nth-child(2){
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+
+.twit2{
+    text-align: right;
+    width: 40%;
+}
+.twit2>svg{
+    padding-top: 5px;
+}
+
+
+.for_twits{
+    width: 94%;
+    height: 500px;
+    margin: auto;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.twit_main{
+    padding: 10px;
+}
+
+.twit_main_child1{
+    display: flex;
+}
+
+.tmc1{
+    width: 20%;
+}
+.tmc1>img{
+    border-radius: 100%;
+}
+.tmc2{
+    width: 30%;
+    font-size: 12px;
+}
+.tmc2>p:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+.tmc2>p:nth-child(2){
+    font-size: 10px;
+    color: gray;
+    margin: 0;
+    margin-top: 5px;
+}
+.tmc3{
+    width: 50%;
+    text-align: right;
+    margin-top: 0;
+}
+.twt1{
+    font-size: 12px;
+}
+
+.twit_main_child2{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.tmc4{
+    width: 18%;
+}
+.tmc4>svg{
+    margin: 0;
+}
+.tmc6{
+    width: 64%;
+    text-align: right;
+}
+.tmc6>p{
+    margin: 0;
+}

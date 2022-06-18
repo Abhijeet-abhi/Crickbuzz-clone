@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2,p,h1,button,span,h3{
+    background-color: transparent;
+    color: white;
+}
+label{
+    background-color: transparent;
+}
+
+
+
+/*======= css for nav bar in cb_plus1 or 2 page =======*/
+
+
+.cbp_nav{
+    width: 100%;
+    background-color: #009270;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 20px;
+}
+.cbp_nav>img{
+    height: 33px;
+    background-color: transparent;
+}
+.btn_all_plan{
+    background-color: white;
+    padding: 8px 25px;
+    border-radius: 18px;
+    border: 0;
+    height: 33px;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+/*=========================== css for cb_plus.html =================*/
+.cbp{
+    width: 100%;
+    height: 273px;
+    border: 1px solid;
+    display: flex;
+    background-image: linear-gradient(to right, black, gray);
+}
+.cbp>div{
+    width: 50%;
+    height: 77%;
+    margin: auto;
+    background-color: transparent;
+    
+}
+.cbp1{
+    padding: 10px 40px 0 40px;
+}
+.cbp1>p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.cbp1>h1{
+    margin-top: 5px;
+    font-size: 36px;
+}
+.cbp2{
+    text-align: center;
+}
+.cbp2>img{
+    border-radius: 5px;
+}
+.unlk_btn{
+    background-color: teal;
+    padding: 8px 40px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 14px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+.unlk_btn>a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+
+
+
+/*========== css for cb_plus1.html page =======*/
+.cb_plan{
+    width: 100%;
+    height: 440px;
+    margin-top: 5px;
+    background-image: linear-gradient(180deg,#02a57f,#06b2bd);
+    display: flex;
+}
+.cb_plan>div{
+    width: 45%;
+    margin: auto;
+    background-color: transparent;
+}
+.cb_plan2{
+    margin: auto;
+}
+.circle{
+    width: 360px;
+    height: 360px;
+    background: hsla(0,0%,98%,.34);
+    border-radius: 50%;
+    margin: auto;
+}
+.circle>img{
+    margin-left: -30px;
+    margin-top: 28px;
+    border-radius: 5px;
+}
+.cb_plan1{
+    padding: 10px 20px 0 20px;
+}
+.cb_plan1>p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.cb_plan1>h1{
+    margin-top: 5px;
+    font-size: 36px;
+}
+.btn_all_plan>a{
+    text-decoration: none;
+    color: black;
+}
+.btn_ul{
+    margin-top: 20px;
+    padding: 8px 25px;
+    font-size: 12px;
+}
+.btn_lm{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #d0d3d4;
+    margin-left: 15px;
+    font-size: 12px;
+}
+.cb_plan1>.fs_12{
+    font-size: 12px;
+}
+.ul{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.coupon{
+    width: 100%;
+    background-color: #F8E1A8;
+    text-align: center;
+}
+.coupon>p{
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+}
+.black{
+    color: black;
+}
+.plus_ben{
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.plus_ben>p{
+    color: black;
+    margin-top: 10px;
+}
+.plus_ben>h3{
+    background-color: transparent;
+}
+.pb_main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px 16px;
+    background-color: transparent;
+    margin-top: 20px;
+}
+.pb_main_child{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
+}
+.pb_main_child>div{
+    margin: 25px 10px 5px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.5;
+}
+.pb_main_child>div>div:nth-child(1){
+    font-weight: bold;
+}
+.pb_main_child>div>div:nth-child(2){
+    margin-top: 10px;
+}
+.pb_main_child>img{
+    border-radius: 5px;
+}
+.sel_your_plan{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px 20px;
+    background-color: transparent;
+}
+.sel_your_plan>div{
+    background-color: transparent;
+}
+.sel_pla{
+    background-color: transparent;
+}
+.sel_plan1{
+    text-align: left;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
+}
+.input_plan{
+    position: relative;
+    top: 55px;
+    left:-130px;
+    width: 20px;
+    height: 20px;
+}
+[type=radio]:checked~.sel_plan1{
+   background-color: #009270;
+}
+[type=radio]:checked~.sel_plan1>p,checked~.sel_plan1>p>.wht{
+    color: white;
+}
+[type=radio]:checked~.sel_plan1>p>.wht{
+    color: white;
+}
+.sel_pla:checked~.sel_plan1{
+    background-color: teal;
+}
+.dis_spn{
+    background: #ffd361;
+    padding: 3px 12px;
+    border-bottom-right-radius: 20px;
+    font-size: 10px;
+    color: #000;
+    position: relative;
+    top: -3px;
+    left: 0;
+}
+
+.fs10{
+    font-size: 10px;
+}
+.lt{
+    text-decoration: line-through;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs24{
+    font-size: 24px;
+}
+.fs20{
+    font-size: 20px;
+}
+.fs22{
+    font-size: 22px;
+}
+.fs16{
+    font-size: 16;
+}
+.bld{
+    font-weight: bold;
+}
+.sel_plan1>p{
+    color: black;
+}
+.blk{
+    color: black;
+}
+.ml60{
+    margin-left: 60px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.ml90{
+    margin-left: 90px;
+}
+.ml15{
+    margin-left: 15px;
+}
+.ml50{
+    margin-left: 50px;
+}
+.lh15{
+    line-height: 2;
+}
+.p10{
+    margin-top: 0;
+    text-align: left;
+    padding: 0 21px 0 21px;
+}
+.fs11{
+    font-size: 11px;
+}
+.fs12{
+    font-size: 12px;
+}
+.cg{
+    color: gray;
+}
+[type=checkbox]:not(:checked)~.ctop{
+    background: #71cab6;
+    cursor: auto;
+}
+.chkbx{
+    width: 15px;
+    height: 15px;
+}  
+[type=checkbox] {
+    position: relative;
+    left: 0;
+    top: 4px;
+}
+.ctop{
+    padding: 8px 20px;
+    border-radius: 2px;
+    color: #fff;
+    background: #009270;
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.blue{
+    color: blue;
+}
+.mt60{
+    margin-top: 60px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.fs18{
+    font-size: 18px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.bt{
+    background-color: transparent;
+}
+
+
+
+
+
+#ch1{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+#plan_main{
+    width: 100%;
+    border: 1px solid transparent;
+    margin-top: 5px;
+    padding-bottom: 100px;
+    background-color: rgb(246, 246, 246);
+}
+#plan_main1{
+    width:67%;
+    margin: auto;
+    text-align: center;
+}
+.wd100{
+    width: 100%;
+}
+.wd50{
+    width: 50%;
+}
+.wd45{
+    width: 45%;
+}
+.sb{
+    justify-content: space-between;
+}
+#ch{
+    background-color:#009270;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+#ch>div{
+    color: white;
+    background-color: transparent;
+    width: 50%;
+}
+.tal{
+    text-align: left;
+}
+.tar{
+    text-align: right;
+}
+.df{
+    display: flex;
+}
+.bnn{
+    border: none;
+}

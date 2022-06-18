@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP authentication</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .otp{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #fafafa;
+        }
+        button{
+            margin-top: 15px;
+            background-color: rgb(17, 108, 193);
+            color: white;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            padding: 5px 20px;
+        }
+        input{
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="otp">
+            <h2>Verify with OTP</h2>
+            <p>Please enter the OTP sent to customer phone number</p>
+            <input id="pswd" type="password" placeholder="One Time Password" maxlength="4"></br>
+            <button id="btn">Verify</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    
+   
+    document.querySelector("#btn").addEventListener("click",myfcn)
+    function myfcn(){
+        let pswd=document.querySelector("#pswd").value
+        if(pswd=="1234"){
+            alert("Payment successful")
+            location.replace("../news/cricbuzz_plus.html")
+        }
+        else{
+            alert("Wrong OTP")
+        }
+    }
+</script>
