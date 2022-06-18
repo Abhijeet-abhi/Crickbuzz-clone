@@ -1,0 +1,188 @@
+<script>
+    let user = JSON.parse(localStorage.getItem("cickuserlogin"));
+    if(user!==true){
+        window.location.href="signup.html";
+    }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Cricket Score, Latest News Status || Videos ..</title>
+    <link rel="stylesheet" href="./style/userstyle.css">
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <div>
+                <div class="logo">
+                    <a href="navbar.html"><img src="https://www.cricbuzz.com/images/cb_logo.svg" ></a>
+                </div>
+
+                <div class="plans">
+                    <a href="#plans">View all plans</a>
+                </div>
+            </div>
+
+            <div class="comboplanbox">
+                <div>
+                    <h1>Get 15 Subscriptions with 1 Plan and save INR 10000!</h1>
+                    <p>Cricbuzz Plus + Times Prime</p>
+                    <h1>Annual Combo Plan</h1>
+                    <div class="link">
+                        <a href="#">Unlock now for INR 999</a>
+                        <a href="#">Learn more </a>
+                    </div>
+                    <p>By continuing you agree to <a href="#">Cancellation & Refund Policy</a></p>
+                </div>
+
+                <div>
+                    <div>
+                       
+                    </div>
+                    <img src="https://www.cricbuzz.com/a/img/v1/401x301/i1/c235844/hero_plan.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="coupon">
+                <p>Have a coupon? <a href="#">Redeem Now</a></p>
+            </div>
+
+            <div class="benifitbox">
+                <p>Cricbuzz Plus Benefits</p>
+                <p>Unlock Cricbuzz Plus to enjoy these benefits on website and mobile app.</p>
+                <div class="benifits">
+                    <div>
+                            <img src="https://www.cricbuzz.com/a/img/v1/120x120/i1/c222004/feature_image.jpg" alt="">
+                            <div>
+                                <p>EXCLUSIVE DEALS</p>
+                                <p>Avail benefit of amazing deals on great products</p>
+                            </div>
+                    </div>
+
+                    <div>
+                            <img src="https://www.cricbuzz.com/a/img/v1/120x120/i1/c218378/feature_image.jpg" alt="">
+                            <div>
+                                <p>NEWS</p>
+                                <p>Read amazing articles written by some of the best cricket writers</p>
+                            </div>
+                    </div>
+
+                    <div>
+                            <img src="https://www.cricbuzz.com/a/img/v1/120x120/i1/c218379/feature_image.jpg" alt="">
+                            <div>
+                                <p>MATCH PARTY</p>
+                                <p>Join virtual match parties live with fans for select IPL and WC matches</p>
+                            </div>
+                    </div>
+
+                    <div>
+                            <img src="https://www.cricbuzz.com/a/img/v1/120x120/i1/c218376/feature_image.jpg" alt="">
+                            <div>
+                                <p>VIDEOS</p>
+                                <p>Watch exclusive shows like Retro Reels, Cricbuzz in Conversation and more</p>
+                            </div>
+                    </div>
+
+                    <div>
+                            <img src="https://www.cricbuzz.com/a/img/v1/120x120/i1/c219068/feature_image.jpg" alt="">
+                            <div>
+                                <p>MATCH CLIPS</p>
+                                <p>Watch In-match clips for BBL and Ashes</p>
+                            </div>
+                    </div>
+                    
+                    <div>
+                            <img src="https://www.cricbuzz.com/a/img/v1/120x120/i1/c223048/feature_image.jpg" alt="">
+                            <div>
+                                <p>NO ADS</p>
+                                <p>Experience Cricbuzz without any Intrusive Ads</p>
+                            </div>
+                    </div>
+                </div>
+                <p>And many more upcoming amazing features</p>
+            </div>
+
+            <div class="plansbox">
+                <p>SELECT YOUR PLAN</p>
+
+                <div id="plans">
+
+                    <div>
+                        <div>
+                            <div>
+                                <input type="radio" name="plan" id="comboplan">
+                            </div>
+                            <div>
+                                <p>CRICKBUZZ PLUS+TIMES PRIME</p>
+                                <p>Annual Combo Plan</p>
+                            </div>
+                            <div>
+                                <p> <strike> INR 1199</strike></p>
+                                <p>INR <strong>999</strong></p>
+                            </div>
+                        </div>
+                        <p>
+                            Save more than INR 10000 with this combo plan. Get 1 year subscription of Cricbuzz Plus and Times Prime. Get complimentary access to 6 Months of Disney+ Hotstar, 6 Months of SonyLIV, 3 Months of Zomato Pro & much more with Times Prime.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div>
+                            <div>
+                                <input type="radio" name="plan" id="anualplan">
+                            </div>
+                            <div>
+                                <p>CRICKBUZZ PLUS</p>
+                                <p>Annual Plan</p>
+                            </div>
+                            <div>
+                                <p> <strike> INR 750</strike></p>
+                                <p>INR <strong>500</strong></p>
+                            </div>
+                        </div>
+                        <p>
+                            Get 1 year subscription of Cricbuzz Plus. And enjoy exclusive articles, videos and more without any intrusive Ads. 
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <div>
+                                <input type="radio" name="plan" id="quarterplan">
+                            </div>
+                            <div>
+                                <p>CRICKBUZZ PLUS</p>
+                                <p>Quarterly Plan</p>
+                            </div>
+                            <div>
+                                <p>  &nbsp;</p>
+                                <p>INR <strong>250</strong></p>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            Get 90 days of Cricbuzz Plus. And enjoy exclusive articles, videos and more without any intrusive Ads.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms"> <p>I agree with the <a href="#">Cancellation & Refund</a> Policy of Cricbuzz</p>
+                </div>
+
+                <div class="paybtn">
+                    <button>Continue to payment</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+   
+</body>
+</html>
+
+<script src="./script/reguser.js"></script>

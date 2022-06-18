@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="footer.css"/>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 
         <div id="top">
             <ul id="up">
-                <li><img src="https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.svg" alt=""></li>
+                <li><a href="navbar.html"><img src="https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.svg" alt=""></a></li>
                 <li><a href="#">Live Scores</a></li>
                 <li><a href="#">Schedule</a></li>
                 <li><a href="#">Archives</a></li>
@@ -115,8 +115,8 @@
                 <li><a href="#">More <i class="fas fa-sort-down"></i></a>
                     <div class="dropDown">
                         <ul>
-                            <li>World Test Championship</li>
-                            <li>World Cup Super League</li>
+                            <li><a href="./world_test_champ.html">World Test Championship</a></li>
+                            <li><a href="./world_cup_superleague.html">World Cup Super League</a></li>
                             <li>Quiz</li>
                             <li>Photos</li>
                             <li>Mobile Apps</li>
@@ -130,7 +130,10 @@
                     <href="#" style="padding: 0px 12px;"><i class="fas  fa-search"></i>
                 </li>
                 <li id="signup">
-                    <href="#" style="padding: 0px 12px;"><i class="far fa-user-circle"></i>
+                    <a><i class="far fa-user-circle"></i> </a>
+                    <div id="userdropDown">
+                        
+                    </div>
                 </li>
             </ul>
         </div>
@@ -169,3 +172,5 @@
 </body>
 
 </html>
+
+<script src="./script/navbar.js"></script>
