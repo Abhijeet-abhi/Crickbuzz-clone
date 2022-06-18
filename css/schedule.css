@@ -1,0 +1,34 @@
+#schedule{
+    /* border: 1px solid; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* width:100%; */
+    padding:10px 15px 15px 15px;
+}
+#schedule>h5{
+color: #009270;
+font-weight: bold;
+}
+#schedule>div{
+    width: 95%;
+}
+#schedule>div>p{
+color:black;
+font-size:13.5px;
+line-height: 20px;
+}
+#schedule>div>p+p{
+font-size:12px;
+color:grey;
+margin-top: -10px;
+}
+#schedule>div>a{
+    font-size:11px;
+    text-decoration: none;
+}
+#schedule>div>a:hover{
+    text-decoration: underline;
+}
+#schedule>div>hr{
+    color:grey;
+    opacity: 20%;
+}

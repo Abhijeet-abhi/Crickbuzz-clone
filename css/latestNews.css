@@ -1,0 +1,32 @@
+#latestNews{
+    /* border: 1px solid; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* width:100%; */
+    padding:10px 15px 15px 15px;
+}
+#latestNews>h5{
+color: #009270;
+font-weight: bold;
+}
+#latestNews>div{
+    width: 95%;
+}
+#latestNews>div>a{
+color:black;
+text-decoration: none;
+font-size:13.5px;
+}
+#latestNews>div>a:last-child{
+font-size:11px;
+}
+#latestNews>div>a:hover{
+text-decoration: underline;
+}
+#latestNews>div>p{
+font-size:12px;
+color:grey;
+}
+#latestNews>div>hr{
+    color:grey;
+    opacity: 20%;
+}

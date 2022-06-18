@@ -1,0 +1,33 @@
+#featuredVideo{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:10px 15px 15px 15px;
+}
+#featuredVideo>h5{
+    color:#009270;
+    font-weight: bold;
+}
+iframe{
+    width:100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+#featuredVideo>div>a{
+
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+#featuredVideo>div>p{
+    color:grey;
+    font-size:12.5px;
+}
+#featuredVideo>button{
+    padding:10px 20px;
+    color:white;
+    background-color: #009270;
+    border: none;
+    border-radius: 5px;
+    margin:auto;
+    display:block;
+    
+}
