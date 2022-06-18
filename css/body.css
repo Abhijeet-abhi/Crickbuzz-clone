@@ -1,0 +1,32 @@
+.bottom{
+    width:80%;
+    margin:auto;
+    display:grid;
+    column-gap:1%;
+    row-gap: 0.20%;
+    grid-template-columns: 19% 48% 31%;
+    /* grid-template-rows: auto; */
+    grid-template-areas: "ln md fv"
+    "lp md sp"
+    "sc md sp"
+    ". md sp"
+    ". md .";
+}
+.bottom>#latestNews{
+    grid-area: ln;
+}
+.bottom>#latestPhotos{
+    grid-area:lp;
+}
+.bottom>#schedule{
+    grid-area:sc;
+}
+.bottom>#middle{
+    grid-area:md;
+}
+.bottom>#featuredVideo{
+    grid-area:fv;
+}
+.bottom>#specials{
+    grid-area:sp;
+}
