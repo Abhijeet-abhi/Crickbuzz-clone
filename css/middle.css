@@ -1,0 +1,159 @@
+#middle{
+width:100%;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* first start */
+#first{
+    padding:0px 15px 0px 15px;
+    display:flex;
+    flex-direction:column ;
+}
+#first>p{
+font-size:12.5px;
+color:grey;
+line-height: 20px;
+}
+
+#first>h2{
+    width:90%;
+    margin-bottom: -2px;
+}
+#first>img{
+    border-radius: 5px;
+}
+#first>hr{
+    width:100%;
+    color:grey;
+    opacity: 30%;
+}
+
+/* first end */
+
+/* second start */
+#second{
+    padding:0px 15px 0px 15px;
+    display:flex;
+    flex-direction:column ;
+}
+#second>p{
+font-size:12.5px;
+color:grey;
+line-height: 20px;
+}
+
+#second>h2{
+    width:90%;
+    margin-bottom: -2px;
+}
+#second>img{
+    border-radius: 5px;
+}
+#second>hr{
+    width:100%;
+    color:grey;
+    opacity: 30%;
+}
+#second>a{
+    line-height: 30px;
+    text-decoration: none;
+    font-size:14px;
+    font-weight: bold;
+    color:blue;
+}
+
+/* second end */
+
+/* third start */
+#third{
+    padding:0px 15px 0px 15px;
+    
+}
+#third>div{
+    display:grid;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: "im a"
+    "im a"
+    "im p";
+}
+#third>div>img{
+grid-area: im;
+border-radius:5px;
+float: left;
+margin-right:10px;
+}
+#third>div>a{
+grid-area:a;
+font-weight: bold;
+color:black;
+text-decoration: none;
+
+}
+#third>div>p{
+    grid-area: p;
+    font-size: 12px;
+    color:grey;
+}
+#third>p{
+    font-size:12.5px;
+    color:grey;
+    line-height: 20px;
+}
+#third>hr{
+    width:100%;
+    color:grey;
+    opacity: 30%;
+}
+
+/* third end */
+
+/* fourth start*/
+#fourth{
+    padding:0px 15px 0px 15px;
+    
+}
+#fourth>div{
+    display:grid;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: "im a"
+    "im a"
+    "im p";
+}
+#fourth>div>img{
+grid-area: im;
+border-radius:5px;
+float: left;
+margin-right:10px;
+}
+#fourth>div>a{
+grid-area:a;
+font-weight: bold;
+color:black;
+text-decoration: none;
+
+}
+#fourth>div>p{
+    grid-area: p;
+    font-size: 12px;
+    color:grey;
+}
+#fourth>p{
+    font-size:12.5px;
+    color:grey;
+    line-height: 20px;
+}
+#fourth>hr{
+    width:100%;
+    color:grey;
+    opacity: 30%;
+}
+#fourth>a{
+    text-decoration:none;
+    font-weight: bold;
+    font-size:13px;
+    color:blue;
+}
+/* fourth end*/
