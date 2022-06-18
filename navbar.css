@@ -18,7 +18,7 @@
        height: 3.5rem;
        border-bottom: 2px solid #02795d;
    }
-   #top a{
+   #top>#up>li>a{
        text-decoration: none;
        color: white;
        font-size: 13px;
@@ -26,12 +26,18 @@
       margin: 0px;
       padding: 19px 6px;
    }
-
+   #top>#up>li ul a{
+    text-decoration: none;
+    color:black;
+   }
    #signup:hover{
        background-color: #009270 ;
    }
    #top a:hover{
        background-color: #00775b ;
+   }
+   #dropDownBox>li>a:hover{
+    background-color:transparent;
    }
    
    #top ul{
