@@ -18,7 +18,8 @@
        height: 3.5rem;
        border-bottom: 2px solid #02795d;
    }
-   #top a{
+   
+   #top>#up>li>a{
        text-decoration: none;
        color: white;
        font-size: 13px;
@@ -26,14 +27,18 @@
       margin: 0px;
       padding: 19px 6px;
    }
-
+   #top>#up>li ul a{
+    text-decoration: none;
+    color: #000;
+   }
+   
    #signup:hover{
        background-color: #009270 ;
    }
-   #top a:hover{
+   #top>#up>li>a:hover{
        background-color: #00775b ;
    }
-   
+
    #top ul{
        display: flex;
        justify-content: space-around;
@@ -187,3 +192,50 @@
 
 
 
+
+ 
+  /* Vishwajeet, I am Aading some Styes for the user icon and login logout process */
+ 
+  #signup{
+    /* display: none; */
+    position: relative;
+ }
+ #signup #userdropDown{
+      display: none;
+  }
+ #signup>a{
+    font-size: 18px;
+    display: block;
+    padding: 17px 10px;
+ }
+ #signup:hover #userdropDown{
+    display: block;
+    color: #000;
+    background-color: transparent;
+   position: absolute;
+   top: 56px;
+   width: 100px;
+   color: #000;
+ }
+ #signup:hover #userdropDown p{
+    background-color: #fff;
+    margin: 0px;
+ }
+ #signup:hover #userdropDown p:hover{
+    border-bottom: 1px solid #ccc;
+    background-color: #aaa;
+ }
+ #signup:hover #userdropDown p>a{
+    color: #000;
+    margin: 0px;
+    font-size: 12px;
+    text-decoration: none;
+ }
+ #signup:hover #userdropDown p>a:hover{
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    color: #000;
+ }
+
+ 

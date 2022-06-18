@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+}
+.content{
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    /* padding: 30px 0px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content>h1{
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 42px;
+    padding: 20px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content>h1+p{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    
+}
+.content>h1+p+h2{
+    text-align: center;
+    margin: 20px 0px;
+}
+.content>h1+p+h2+div{
+    width: 96%;
+    margin: auto;
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+.content>h1+p+h2+div>div{
+    border-right: 1px solid #ccc;
+    width: 23%;
+}
+.content>h1+p+h2+div>div>h1{
+    font-size: 20px;
+}
+.content>h1+p+h2+div>div>p{
+    font-size: 14px;
+}
+.content>h1+p+h2+div>div:last-child{
+    border-right: none;
+}
+.content>h1+p+h2+div+h2{
+    margin-left: 20px;
+    margin: 30px 20px;
+}
+.content>h1+p+h2+div+h2+div>div{
+    display: flex;
+    gap: 20px;
+    margin: 30px 0px;
+}
+.content>h1+p+h2+div+h2+div>div>div:first-child{
+    width: 20%;
+    text-align: center;
+}
+
+.content>h1+p+h2+div+h2+div>div>div:last-child{
+    width: 80%;
+    padding-left: 20px;
+   
+}
+
+.content>h1+p+h2+div+h2+div>div>div:last-child>h1{
+    font-size: 16px;
+    line-height: 40px;
+    color: rgb(9, 61, 158);
+}
+.content>h1+p+h2+div+h2+div>div>div:last-child>h1>a{
+    text-decoration: none;
+}
+.content>h1+p+h2+div+h2+div>div>div:last-child>h1>a:hover{
+    cursor: pointer;
+}
+
+

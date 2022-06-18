@@ -10,13 +10,7 @@ btn.setAttribute("class", "diabled");
 form.email.addEventListener("input", isDataPrensent)
 termandcond.addEventListener("click", isDataPrensent);
 
-function abc(){
-    let form = document.querySelector("form");
-    // let termcheckbox =form.termandcond;
-    // console.log(termcheckbox.checked);
-    console.log("ddd");
 
-}
 function isDataPrensent(){
     let form = document.querySelector(".loginsignup");
     let email = form.email.value;
@@ -33,8 +27,11 @@ function isDataPrensent(){
 
 // signup login form
 document.querySelector("form").addEventListener("submit", loginsignup)
+
 let otpverifyform = document.querySelector("#otpform"); 
+
 otpverifyform.setAttribute("class", "hide");
+
 function loginsignup(ev){
 ev.preventDefault();
 let otpverify= document.querySelector("#otpform"); 
@@ -45,8 +42,8 @@ loginsignupbox.setAttribute("class", "hide");
 otpverify.removeAttribute("class", "hide");
 otpverify.setAttribute("class", "optverifyform");
 
-email.innerText= "OTP Send to " + form.email.value;
-   localStorage.setItem("cickbuzzuser", form.email.value);
+    email.innerText= "OTP Send to " + form.email.value;
+    localStorage.setItem("cickbuzzuser", form.email.value);
 }
 
 
@@ -67,6 +64,7 @@ function verifyOtp(event){
     if(digit1==1 && digit2==2 && digit3==3 && digit4==4 && digit5==5 && digit6 == 6){
         localStorage.setItem("cickuserlogin", true);
         alert("Logged in successfully");
-        window.location.href="reguser.html";
+        window.location.href="home.html";
     }
+
 }
