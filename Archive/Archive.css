@@ -1,29 +1,30 @@
-*body{
-    margin: 0px;
-    width: 0px;
-    box-sizing: border-box;
-}
+
+        *{
+
+            box-sizing: border-box;
+            font-family: 'Noto Sans', sans-serif;
+        }
 #black{
-    width: 100%;
-    height: 40px;
-    padding: 10px 0px 10px 0px;
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    padding: 7px 0px 7px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 15px;
     background-color:#4A4A4A;
     border-bottom: 9px solid gainsboro;
 
 }
 #black > #Match{
     display: flex;
-    width:60%;
-    
+    width:80%;
     color: white;
     justify-content: space-around;
 }
-#black > #all{
+#black > #all1{
     height: 40px;
     width: 10%;
     display: flex;
@@ -31,52 +32,56 @@
     align-items: center;
 }
 #black > #Match >p  {
-   padding: 15px 0px 15px 0px;
+   padding: 10px 0px 8px 0px;
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ;
 }
 #black > #Match >p:hover  {
     background-color: black;
     cursor: pointer;
  }
-#all > select{
-    font-size: 20px;
+#all1 > select{
+    font-size: 15px;
 }
 
 #series{
-    width:100%;
+    width:80%;
+    margin: auto;
     border-bottom: 1px solid gainsboro;
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
+    background-color:#FFFFFF;
 }
 #series > div{
     
     display: flex;
-    width: 60%;
+    width: 65%;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 23px;
+    font-size: 16px;
     
 }
 #body{
-    width: 100%;
-    
+    width: 80%;
+    margin: auto;
     display: flex;
 }
 #body > #first{
-    width: 70%;
+    width: 65%;
     border-right: 2px solid gainsboro;
+    background-color:#FFFFFF;
 
 }
 #body > #second{
-    width: 30%;
+    width: 35%;
+    background-color:#FFFFFF;
     
 }
 #international{
     display: flex;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     
 }
 #international > #inter{
@@ -88,7 +93,8 @@
     justify-content:flex-start;
     align-items: center;
     width: 80%;
-    margin-left: 200px;
+    margin-left: 80px;
+    font-size:11px;
 }
 #international > #schedule > div > h2:hover{
     cursor: pointer;
@@ -96,18 +102,18 @@
 }
 #international > #schedule > div > p{
         margin-left: 10px;
-        font-size: 18px;
+        font-size: 12px;
 }
 #schedule > hr{
-    margin-left: 200px;
-    width: 90%;
+    margin-left: 80px;
+    width: 80%;
     border: 1px solid gainsboro;
 }
 
 #league{
     display: flex;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 11px;
     
 }
 #league > #lg{
@@ -119,7 +125,7 @@
     justify-content:flex-start;
     align-items: center;
     width: 70%;
-    margin-left: 220px;
+    margin-left: 80px;
 }
 #league > #schedule1 > div > h2:hover{
     cursor: pointer;
@@ -127,17 +133,17 @@
 }
 #league > #schedule1 > div > p{
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 12px;
 }
 #schedule1 > hr{
-    margin-left: 220px;
-    width: 109%;
+    margin-left: 80px;
+    width: 90%;
 }
 
 #domestic{
     display: flex;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 11px;
     
 }
 #domestic > #dom{
@@ -149,7 +155,7 @@
     justify-content:flex-start;
     align-items: center;
     width: 70%;
-    margin-left: 250px;
+    margin-left: 105px;
 }
 #domestic > #schedule3 > div > h2:hover{
     cursor: pointer;
@@ -157,18 +163,18 @@
 }
 #domestic > #schedule3 > div > p{
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 12px;
 }
 #schedule3 > hr{
-    margin-left: 250px;
-    width: 80%;
+    margin-left: 105px;
+    width: 75%;
 }
 
 #women{
     display: flex;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    font-size: 15px;
+    font-size: 11px;
     
 }
 #women > #wom{
@@ -179,7 +185,7 @@
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    margin-left: 270px;
+    margin-left: 125px;
 }
 #women > #schedule4 > div > h2:hover{
     cursor: pointer;
@@ -187,11 +193,11 @@
 }
 #women > #schedule4 > div > p{
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 12px;
 }
 #schedule4 > hr{
-    margin-left: 270px;
-    width: 78%;
+    margin-left: 125px;
+    width: 72%;
 }
 
 
@@ -204,18 +210,18 @@ h2+hr{
 }
 hr + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 17px;
 }
 #twenty + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 17px;
 }
 #twenty{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(2,80px);
+    grid-template-columns: repeat(2,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 12px;
     gap: 5px;
 }
 #twenty > div:hover{
@@ -225,22 +231,22 @@ hr + p{
 }
 #twenty > div{
     background-color: rgb(244, 239, 239);
-    padding: 10px;
+    padding: 7px;
     display: grid;
     justify-content: center;
     align-items: center;
 }
 #nineteen{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #nineteen > div{
     background-color: rgb(244, 239, 239);
-    padding: 10px;
+    padding: 7px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -252,14 +258,14 @@ hr + p{
 }
 #nineteen + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 17px;
 }
 #eighteen{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #eighteen > div{
@@ -276,14 +282,14 @@ hr + p{
 }
 #eighteen + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #seventeen{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #seventeen > div{
@@ -300,14 +306,14 @@ hr + p{
 }
 #seventeen + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #sixteen{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #sixteen > div{
@@ -324,14 +330,14 @@ hr + p{
 }
 #sixteen + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #fifteen{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #fifteen > div{
@@ -348,14 +354,14 @@ hr + p{
 }
 #fifteen + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 17px;
 }
 #fourteen{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #fourteen > div{
@@ -372,14 +378,14 @@ hr + p{
 }
 #fourteen + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 17px;
 }
 #thirteen{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #thirteen > div{
@@ -396,14 +402,14 @@ hr + p{
 }
 #thirteen + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #twelve{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #twelve > div{
@@ -420,14 +426,14 @@ hr + p{
 }
 #twelve + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #eleven{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #eleven > div{
@@ -445,14 +451,14 @@ hr + p{
 
 #eleven + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #ten{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #ten > div{
@@ -470,14 +476,14 @@ hr + p{
 
 #ten + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #nine{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #nine > div{
@@ -495,14 +501,14 @@ hr + p{
 
 #nine + p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #eight{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #eight > div{
@@ -519,14 +525,14 @@ hr + p{
 }
 #eight+ p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #seven{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #seven > div{
@@ -544,14 +550,14 @@ hr + p{
 
 #seven+ p{
     margin-left: 20px;
-    font-size: 23px;
+    font-size: 15px;
 }
 #six{
-    margin-top: -15px;
+    margin-top: -10px;
     display: grid;
-    grid-template-columns: repeat(5,80px);
+    grid-template-columns: repeat(5,50px);
     grid-template-rows: auto;
-    font-size: 23px;
+    font-size: 13px;
     gap: 5px;
 }
 #six > div{
@@ -570,14 +576,14 @@ hr + p{
 
 #first > h2{
     margin-left: 30px;
-    font-size: 30px;
+    font-size: 25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 #second > h2{
     margin-left: 30px;
-    font-size: 25px;
+    font-size: 22px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -592,5 +598,5 @@ hr + p{
     cursor: pointer;
     color: green;
     font-weight: bold;
-    border-bottom: 5px solid green;
+    border-bottom: 3px solid green;
   }
