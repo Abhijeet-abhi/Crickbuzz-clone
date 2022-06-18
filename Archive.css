@@ -1,0 +1,596 @@
+*body{
+    margin: 0px;
+    width: 0px;
+    box-sizing: border-box;
+}
+#black{
+    width: 100%;
+    height: 40px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color:#4A4A4A;
+    border-bottom: 9px solid gainsboro;
+
+}
+#black > #Match{
+    display: flex;
+    width:60%;
+    
+    color: white;
+    justify-content: space-around;
+}
+#black > #all{
+    height: 40px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#black > #Match >p  {
+   padding: 15px 0px 15px 0px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ;
+}
+#black > #Match >p:hover  {
+    background-color: black;
+    cursor: pointer;
+ }
+#all > select{
+    font-size: 20px;
+}
+
+#series{
+    width:100%;
+    border-bottom: 1px solid gainsboro;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+#series > div{
+    
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 23px;
+    
+}
+#body{
+    width: 100%;
+    
+    display: flex;
+}
+#body > #first{
+    width: 70%;
+    border-right: 2px solid gainsboro;
+
+}
+#body > #second{
+    width: 30%;
+    
+}
+#international{
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    
+}
+#international > #inter{
+    margin-left: 70px;
+    color: green;
+}
+#international > #schedule > div{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 80%;
+    margin-left: 200px;
+}
+#international > #schedule > div > h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#international > #schedule > div > p{
+        margin-left: 10px;
+        font-size: 18px;
+}
+#schedule > hr{
+    margin-left: 200px;
+    width: 90%;
+    border: 1px solid gainsboro;
+}
+
+#league{
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    
+}
+#league > #lg{
+    margin-left: 70px;
+    color: green;
+}
+#league > #schedule1 > div{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 70%;
+    margin-left: 220px;
+}
+#league > #schedule1 > div > h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#league > #schedule1 > div > p{
+    margin-left: 10px;
+    font-size: 18px;
+}
+#schedule1 > hr{
+    margin-left: 220px;
+    width: 109%;
+}
+
+#domestic{
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    
+}
+#domestic > #dom{
+    margin-left: 70px;
+    color: green;
+}
+#domestic > #schedule3 > div{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 70%;
+    margin-left: 250px;
+}
+#domestic > #schedule3 > div > h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#domestic > #schedule3 > div > p{
+    margin-left: 10px;
+    font-size: 18px;
+}
+#schedule3 > hr{
+    margin-left: 250px;
+    width: 80%;
+}
+
+#women{
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-size: 15px;
+    
+}
+#women > #wom{
+    margin-left: 70px;
+    color: green;
+}
+#women > #schedule4 > div{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 270px;
+}
+#women > #schedule4 > div > h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#women > #schedule4 > div > p{
+    margin-left: 10px;
+    font-size: 18px;
+}
+#schedule4 > hr{
+    margin-left: 270px;
+    width: 78%;
+}
+
+
+#second > div{
+    margin-left: 20px;
+}
+h2+hr{
+    margin-left: 20px;
+    border: 1px solid gainsboro;
+}
+hr + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#twenty + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#twenty{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(2,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#twenty > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#twenty > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#nineteen{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#nineteen > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#nineteen > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#nineteen + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#eighteen{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#eighteen > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#eighteen > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#eighteen + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#seventeen{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#seventeen > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#seventeen > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#seventeen + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#sixteen{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#sixteen > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#sixteen > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#sixteen + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#fifteen{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#fifteen > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#fifteen > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#fifteen + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#fourteen{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#fourteen > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#fourteen > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#fourteen + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#thirteen{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#thirteen > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#thirteen > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#thirteen + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#twelve{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#twelve > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#twelve > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#twelve + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#eleven{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#eleven > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#eleven > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#eleven + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#ten{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#ten > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#ten > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#ten + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#nine{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#nine > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#nine > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#nine + p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#eight{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#eight > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#eight > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#eight+ p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#seven{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#seven > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#seven > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#seven+ p{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#six{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: auto;
+    font-size: 23px;
+    gap: 5px;
+}
+#six > div{
+    background-color: rgb(244, 239, 239);
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#six > div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+#first > h2{
+    margin-left: 30px;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#second > h2{
+    margin-left: 30px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#series > div > p{
+  
+  padding: 12px;
+  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#series > div > p:hover{
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+    border-bottom: 5px solid green;
+  }
