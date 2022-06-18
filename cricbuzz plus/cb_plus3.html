@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cb_plus.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .payment{
+            width: 750px;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+        }
+        .payment1{
+            width: 43%;
+            height: 600px;
+            border-left: 6px solid #4a90e2;
+            border-radius: 10px 0 0 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        .p1c1{
+            margin: 10%;
+        }
+        .payment2{
+            width: 57%;
+            height: 600px;
+        }
+        .p1c1_img{
+            border: 1px solid rgb(238, 237, 237);
+            padding: 10px;
+            text-align: center;
+            border-radius: 3px;
+        }
+        .p2c1{
+            background-color: #fafafa;
+            padding: 28px 45px 20px 41px;
+            width: 100%;
+            border-left: 4px solid #4a90e2;
+        }
+        .for_card{
+            width: 100%;
+            height: 40px;
+            border:1px solid gray;
+            border-radius: 5px;
+            background-color: white;
+            margin-top: 10px;
+        }
+        .for_card>input{
+            width: 90%;
+            height: 30px;
+            margin: 3px;
+            padding: 2px;
+            font-size: 16px;
+        }
+        input{
+            border:0;
+            outline:0;
+        }
+        input:focus{
+            outline:none!important;
+        }
+        input::placeholder{
+            color: rgb(207, 205, 205);
+        }
+        .cbx{
+            height: 22px;
+            width: 22px;
+        }
+        .disc{
+            line-height: 1.7;
+        }
+        .proceed_btn{
+            color: white;
+            background-color: #4a90e2;
+            height: 40px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment">
+        <div class="payment1">
+            <div class="p1c1">
+                <div class="wd100 df">
+                    <div class="wd50 tac mt10">
+                        <button class="blk bnn df mt5" onClick="goBack()"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                          </svg><span class="blk mt5 fs12 bld">Back</span></button>
+                    </div>
+                    <div class="wd50">
+                        <div class="p1c1_img">
+                            <img style="height: 34px;" src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABCCAYAAADQQ92kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDcuMS1jMDAwIDc5LmIwZjhiZTkwLCAyMDIxLzEyLzE1LTIxOjI1OjE1ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjMuMiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUU0Rjk4QzNCRkM5MTFFQzk2RTFBNDc4MDcxRjZFRjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUU0Rjk4QzRCRkM5MTFFQzk2RTFBNDc4MDcxRjZFRjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRTRGOThDMUJGQzkxMUVDOTZFMUE0NzgwNzFGNkVGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRTRGOThDMkJGQzkxMUVDOTZFMUE0NzgwNzFGNkVGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Psl6nNwAABSESURBVHja7F0HeBXVtv5PeieFToBEiEjokNA7SBER9SrixcfF/q4Kgl7pYuGh8hD8QMSriOVd70NsgAZEqkhRhIQEEgi9JRBID+lt7lozc5Jp5yQ5CYnirO+bL8mcM23tf//rX2vvPbFg1woobCJtS2gLgWmm1b3l0vY9bVNpK+YdTvIHzrQJtK03wWfaTTQf2h6mrUgmOrjIH5SavjGtnm0WbYeYASebvjCtgewrBuBi0w+mNZQxANuabjCtIQFommkmAE0zAWiaaSYATTMBaJpp9WYupgu0JgDFBUAJba6e8PNtigifJkgpK4EHbTE5KUB+pvRVz0bUhZ1Nl5kArK1ZCFQZ8PAKwPe9JqGNhx+2pp9HVMoJTG7VBXn0jceatMeGjIsIcfdFP5/G4r7taeex6sox7LwUA3j4As6upitr7PldK4Q/79MT8HLTsKT7fbivWQesvRyLJceikDf+NeTQxx7kmS7R65GUeRkbIx9GsJs3glzcEcJgk61UEOBC54knVuz562coKS0SmdM0E4D2GS83FY+FDca00L7o8e0sZE1cQdHUFRvSziG5IAdrzu7DuaHP1fjMZ4ty0f6nVYCbl4kuE4BGT0x5V3Eero6ajeb0p9uO5Sge+QIWJsVi0a4VEKZ8UieXWXzxEBbEbwa8Ak2UmVmwbOWlGOffCh92m4AWn00Vdy0iFjyal47YrOQ6Ax/b/LaRSL9rIcBJC4d60/7kDEja7PMu4xEZ2Boddq+CMHo2LNuXAnkZEO598+Y6+bsFgB/xrVBuIu7WZUDBLvOtp0Tj8YQtKC8rQyaBjy2AAHGzwSfe2T3/A2RfMZnw1gOgBLo5oX2w/I6RGBIUCpQU6jTfOMpwP05JRImTM0I8/RDw7yfFjzJGza6/O53wBpB1xUScxv7AdUALBga0xl5iNqvNbNEJT3oH4COuy1nLLMW5iOo8DiMSfkDZsOdh+eYfmNb/8VrD3mnTPKkQLd/LPa17YFPHO+0eFz92Pjrvec8s09wSDFiYrQKf1Z5q3lEMuaLlXIMwag5GHv0OOzuNRQ5Bp19Ib6wM7VurS/+YlQT4NpWAxJuLO+6lzlCVdXL3Qc/G7aRM3LQ/OADLig13f59xiZ7KRWS/9/pOgeX7hZgR3B2WrW/Aj5jqQK+Jtb706bxMtZ4rK0GfgOBqHRvd8wEKxUkm8v7wAHR2M9y9KG5jBfs93fR2Yih3BBBD8VBbXdk3GRfFsFthxXkId/ep9vFv9J6sPt4E4B/QSH9ZNr+Oh07txjJKMCYm7oRlyyIpNBI7ze52r7jWtHTMfAw98g12jJxVZ5fek35Bl2XXxOa27ALcuGai76YlIRwey0qluhfrHZ4xwizkqImZrVxm4fDKg/4C/e3ljy+Tj+HLpKNSSOSkoLyMGvc65rWNwFdp59DcKwBzb+uHEX5N6+75im4Abt6Vf7t61PgUI9sNwI7rZ+yXjxq4uuBIYtgwAGSQ5aaiSWBbPEJJwJQW4WhHIcmLgFdMIEwqzsfaqwl493Is8vPSAW24IoA9Q4lBuVyozSRNtf5aIp0zHTPD78SsNhFwkoX7tHMHCHBxItAmteqCMkVx93RBNmKzryKUrt9z/1qcHPA4XL54DsKkVbpb/ikrGatTTmDL9VPIK6UOU07ncXKCD3WUifQMCylZaWtrPJeeRwlAf/9W4s/NxIyvXDyMaK75UWN40vP3DWyN1+j+BzVqoTrFho6j4Msdx03OiEsLMSO0P0oVz3OqMAfbUs9q6ocCRlAiE6bwIftm9YXfqDXdRF++0E59nupYHLXLnozLImn8V9tINK+BpBAVEfnuraNR1Lbe9QxAAkvPRs0RbWPg3pOcw856K6SPuKVQY7fY8jqFymaVPY38+17YYNVx21OOI/3uV/WlDAIOWygdv+6OkarPhlG2y/ZC6x74/NopnCrKhV/LTqrvvHslHtMP/b8cqp0qO5Cz9HsuPc/HyUfx8YWD8CUw5gyfoSY/vmcNMLt4BojJDryDFGARUECheXfaeexmpiPQCmPnVxzjw1GhnBMpCYDuxN7vtB+oOu+0M3uxTVu8Li7Aj13uhnYW4urE7XTSJrDQvS1rN7DGzdgjdkMFGayiiOFXw0w9l4D71rHN9awBS4uwrNNdiI6s/tr25tRLxZGBgqxKAnX31X0vfdjzhscfz5OSiUlN2xt/lp+J54jBfu02AQ8SIPf3fqTi884HP8f0xB3SsFhVDnb1xA0K9xb1u3Nwgq/hrJYTezkp8Wlse6SDwcaa9Sc1E9/GJRnZwg0mLUTnphnKG8MpsC6SDOjo7djkh9js5Ap293OgTLQx/aJD9U3HGZCc3Z+yzBdadDT8OJ4ovYR6RQ/qlUbWhEJTakGO+Pv4xqHVvy7pO2aazgaOvs7CnkLz59dO4k6SA/GRf61kEwpRCfnpauCxtqQsuYefFB6PpJ+XQqs1fPFP1nsK25WdQgA0gACxrTuBKMK3CVLpvKcotDMjqc7F8kNhLwZ3w7PcISgEjFGA0Wq/cElJC2rWuBrbwlHBXWLlrsTsp6hzCzb4xocIoJVGs4oFrfxsaVItMehhus9ywfgMF0gWTGx8m27/1CNfVXSC+gEgaa39Q6fpxXXcBuwkrQePRpImJcbYQ2w22FcNxJdIZ8xi59NzPsjlEgM7Sw15d+y3SGTWsTYEMw3tHxTYxgAEeXAhrbWSNKK7qxdulBWJM5nZVsVuBBo1r/wunTNuxAx09fRXnaLNvjW4rEx6PP2w+PIRzKewzraewK0T26R/r45dQOyuZkYxK68YLYHYcT6k459q1kH8sxPLAAYU6c9Hmhn4gDQtJ1oq826s+9pJ0T9Sp/iCkrIvkmINCMMZjaizZQ1+Rk2oHP55VMdP9g0BMPKXT43ZnNpcuH+pHtY7lkEgfzsy2cLhEHxfh5G6fS+RAN/JQpa1kLOLlLGSk4fsX6P77hDf5rLzSxBh4NRo6oXtty1BIochfjDxu2UVYaK1UR2QQl0b0psvhfbBd6QhxzRqKe5+6vTPlCm0VAn5df2m6sDHljDgCYB6uZjF81ZaiqjMJEWik6lJGMvx9cCndeBj+zDiIV1GmXgjteL3/syQvPaEEhDDOqJBeSfMgPmjMi+pwz37RrkRM7k7u+rAJzLQprkEvhaajMJVaruKzVWMPEbg8979LoHP3eGZPo4xIDlsZfsBut1vx20iwBmEXKL8vjFfo1zRGCz2xV5LrNWBWEZrEbtXGPb2inCmDQ10T9x7gyirfJDC798Td+JfcrKwhjJnVeJAjDEpKMTw1L7U8w9R9mxRLDbyU4ArM+eaOounDvIXG6MggxlgDGLFWhFlABX3WoGuTbRlHaq1nppsWpQFrL9sUoyzGDEKR76oJ8WNcygqtKq67EL6ULj3Ld3u1vs+Qj4zZbnj08wcA2DhDQRrerzoQlspOPWig9lXDHUkZ9Fass/gnu9qJ503YIsvKevlWmMHDz90OfI10vo/pgrNSgAGBNnXnBF+ze3UJAtU12/WNMy2mwx0VGMPzb3zdzz0z8MlnYoSjaLj/c1IrrBONUoAWO+SzhbGzDUAH+3j8pFQBfhIV+cbgK/ToX8jqbSg6uNvSgg2eNh/piTqHVatApJ+JdkB0hqcHNiyO4L071OKlUcWcgi8kT5NMeHEdsl/zJaajvF8y861KN2rhfYguQZoZMnFeeplm9TZxgdqmNeJmsCgCnCGqwTabJSYMtw7wDABMgQfT7Y1Ah+XjKoFvutIvusVaFt1FEW647nptQafwwD099eHnGO51x2qhFt89GH2/5jN7JQC+hpk1mJ2yiUR+vlx2GB8n3qmouCsGqkgp7X28HHIWYnE/KoRHTrXIDuzYN6/mqB+DgJKd0VSkcmdgzTaUAM58GXaeYMCeC7auqk7U4kRIfA1WbONW6j39+bXpBpoVZqNNHjCmHlo6aLW2ved2Ibt6efrbMzFoRAc6anvsWV2ekM46ZbGChB4UEjediVBrNw/YBDCjuZctX1xuk6EAetcy7wshsZMuU7YzkPKPq9zyNR0DGc7HeV/6b7KhUqlVkj66dWQ3uLv67i0omkQbzsL06OS49Xf15RQdvOsGPLLMIPnOZqfaZjJ6mqf/D1lp2DwkdwRJ8BqD9+6WNLVQpn9Bqbs+9fhMxCuKbg/e2YvNl6JlxKThgTgCX5zgMb+u1VXrL0YLWW/SiNgJAybrnfG5SN0dVcMNRDVJ3MzbJMpJRsPGdShxJoeazNy3i5KDE73lmqAQWLIFCpBSLpzLbHj3+RSiNZmR6+XSj2yuVHjWgGYkJuq07CfXD2Bx5voi+KpnGRpWKa1ptRyUGRtC7lMn9GH0rOcVIZWAtbotpG67+1j6WEFBGtq8rdw3xK9v7e/LZXGqgIf6eV1/R5FHy91qJ9z8TBWXzhocxZSvYbgJDm8qYQ73XAj1oAcpqxlEwp/53jUQ1srTNgqFT3pO2ItTGv56XYy8GI0NnoDgZWJqNcOJwAtSz4mFbm5XqjRSHsJ/Fe0U/etDKHM4ulaZ/tOqUwMDKbU778crcshc4mlm3INUBn6iYkTIiapvreUGpVBk89jyxrb1GmMtI6EfcmL3SkkbuV9uuTrtFyzY/AlGYIvYPdKSWvzJBFO8LSbtXPSPb7X435M0mT1y5OPYsnxH+VQV6zfhPrOgm2EnazBfwc368/kCA/q1YN9jWeg7Dy7T9Ih1NuGGI2U2BsKKivR7YpngFm1Eem75UlxOCc3qrPR6AFlyq12vSM2SmcKf2fpPgq4liaOXAiV90DPGazQV4UcMrW1Q68gODHYvALRzScQcQxSBrdS28pFXV9N6BJYatA1V1EDL27TS/UZZ/Nc+tiWcQkh3kG43UaF4ZR1dCU/wxB88RQRvol42CbzuVBYH7L3fdEnC8JH4RmDyNCT2mrf0GdtqXhMP7kbMcpa5E0HIN2s+853UDRipv4jzpLszA62bH4V8GsmNbQBmIp4v72pW8qRBdkOc6HYyop0/IvHf8DWfpVlmNMjX0QYhyBlEVcGbLy1MCxqIwX4eJ2wdsWc8n65E3KmyhmspxTa4vhcfB9KhmbwZVyEcP/bqlMdYe0mj//mpJ2z+bijjEZ8FJbCQ5PEtB1ahBt+3tnAX0a6mjPmRcE9DD8eaq8sRRZjHUeutzIM3XAxObnRz+9X+5DzxXmU/r+sbmgDMfsd9yQ78+vaGDDmQdZmyqGj8nIcKsyp+LM96ak4LsRyYxmAXh0/00Q5YbhcUwksDndj5hN67CRMHJ64DqcBn9ioMV9XRhLfZnBhRq7Cevz2uXENkOyvNRlPVzIk+4m1c23e8lV4w+FDa7cwXZ4H2IpE+Nzg7hhKvbU19Tge17hKDX0wJ0UMx+9wyGWdoCkXONNDvxzSR6WhtqSfwyG5pGJkYRSOnlD0du5BCy78hiLWSYrHCiEtd16juUSHE/OsIg24m8B4hcBRjHIEEeAH+DYXmftJGzXCVEp+OOGQ5IGAvzQJQzs5LH5AmeG3xGIxOdeQRud3I337QFAIZof2Q1cvf9uRQDkDRvblzI6jMaFpe3HIzZ866AHSgWvp/F+c2ScC5R+3D1U8JenI03vExGAy3XdXB2bCbKak5ef0C9R/nTBTTHJqCAfq+MspBDv6Lpy6fTMCs0upLEo5G+ZQelNWgAm6x9AnMpkQxr2C36OFHVqHM3lptgu5nBhY/cidttrsJDgEgYa0ukUHhyhmBc5w2XE3bfmhRbMZGLGB994PfnfgYwFwJu2M/VEElibMKDUOjRYHNtxCAPw9GTVwPumjvXkZv6vbcotaSB3UH6bd6gAUGdkNg3e8/bu5ndEJPwA+TfWhkhMozoq5pGLdqkqWrLqRO5g4sbe6bGaRzm+t3XGixH9X5701/N38LIm9+Wd5WR3Eslv97VgW6WWUwt2vN+htfEpC/9GYr4xLTLxeZPQc1a4DdM8D9n1kf5FPUS5l4vMQU5CFXgc+qV64JvAIw5+H/4GPkU3HTwnuhs/ChogL92FvIVJJIXb0nYIRipLMrPMHsZRHR0wGrKLGRaxj+XFJg93CthupePTgv2zXN+W3PKy6elx8lVtkzNfSZFW3Kqa4l0hDopt55Vw1teIAeSZRtjjJVqic2GEwMqTqx6TvGXxcSmOwPnfhN8ziWeIlBSYAqwahNCVLHGqrZ/uMwDF63weGBfRKAEoTUqMypImlnazDgXmZVQhKiR3XpVV/dkpn6xgvj4yUlaGLuDoRukkWOgDKs7OF8Yuwotu9+ICYr8nOZZRsepkArDYIPRoRw7yM3Hq65MMJWzE19ltx5MiuyS8939pprLhi8FMKid2ZMX2rWEwvh8wT1R2JkGcSieqP2bg4FwN9gnCaJ+xW8eKAclcPWLYtFV89PL1FOEqGTkM/cXJs7RTcn+vfNDAIiV18o17BtI4jsbLdoJtzGe7ZW9+UZjpX440QTjJALRtmy8V6Qb2izob1DpTnIvLsafF/lrhIM15sgaK0COMC2yCda4xcuJdXJX7Hx9tjQEo25nUYhuO5aVhw9gAW7Fktvs64F4XkX7KSa+WrP/e/aaDM86dBT2NIFWOdNbFeh79ADK+cE0c5qufaKcE9KBEYJA1V2ljGagTzT8LHYqpiild0YQ4i9q+1qwefIN22pv0g5FNI9ZKHQi3UIcWFZHau9ebtwzGnVRd8SWC9JyhEHPO3RL2qHl83AeiAsbYhJljWbYL4RgVHLC4/A+PjNuEyr+PlBqnpVHX+fnmJxJY1OVYo05RCLFX/sxwu7xDwOhMTkirGwaQj1WJbMUlx88IdFMKvF2Qjg1mTZ/zU8r3XJgBVjJhBTvbBY20jMCawLR60McDPU/M3EMv9k7ZLPDeStZj5X5JMANa5XuQ5hapJDpCKv5x9uriZPqoDM/9XnM2u6SQxm7uP6YubaObLik0zAWiaCUDTTDMBaNqfE4A3TDeY1pAA/NF0g2kNCcDJphtMayBLZgDyZLSlpi9MawALtiYh/F9cHjD9YVo9Gb/bRVwD8B8BBgDOY22iysBqKwAAAABJRU5ErkJggg==" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="fs22 bld mt30">Enter new card</div>
+                <div class="mt30 fs14">Total Payable Amount &nbsp; ₹ <span class="blk fs20" id="pln"> 999</span></div>
+                <div class="wd100 df mt10 fs12">
+                    <div class="wd50 tal cg">Amount chargeable as per plan</div>
+                    <div class="wd50 tar bld">Up to ₹ <span class="blk" id="pln">999</span></div>
+                </div>
+                <div class="wd100 df fs12 mt10">
+                    <div class="wd50 tal cg">Start Date</div>
+                    <div class="wd50 tar bld" id="start_date">18 June 2022</div>
+                </div>
+                <div class="wd100 df fs12 mt10">
+                    <div class="wd50 tal cg">End Date</div>
+                    <div class="wd50 tar bld" id="end_date">18 June 2023</div>
+                </div>
+            </div>
+        </div>
+        <div class="payment2">
+            <div class="mt30 fs11 ml50 cg bld">CARDS (CREDIT/DEBIT)</div>
+            <div class="p2c1 mt20">
+                <div class="wd100">
+                    <form action="">
+                        <label class="fs14">New Card</label> <br>
+                        <div class="for_card">
+                            <input type="tel" placeholder="Enter Card Number" required> <br>
+                        </div>
+                        
+                        <div class="df sb mt30">
+                            <div class="wd45">
+                                <label class="fs14">Expiry</label>
+                                <div class="for_card">
+                                    <input maxlength="5" tabindex="2" type="tel" placeholder="MM/YY" required> <br>
+                                </div>
+                            </div>
+                            <div class="wd45">
+                                <label class="fs14">CVV</label>
+                                <div class="for_card">
+                                    <input type="password" placeholder="Enter CVV" size="1" minlength="3" maxlength="3" required> <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt30">
+                            <label class="fs14">Name on Card</label>
+                            <div class="for_card">
+                                <input type="text" placeholder="Enter Name as on card" required> <br>
+                            </div>
+                        </div>
+                        <div class="df mt20">
+                            <div>
+                                <input class="cbx" type="checkbox" required>
+                            </div>
+                            <div class="ml10 fs14 cg disc">
+                                I hereby agree and authorize Cricbuzz to debit my account and set up standing instruction. <br> Learn more
+                            </div>
+                        </div>
+                        <button type="submit" class="wd100 proceed_btn ctop">PROCEED</button>
+                        
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+    let price=JSON.parse(localStorage.getItem("price"))
+
+
+    //function for submit button and recdirect to otp page
+    document.querySelector("form").addEventListener("submit",proceed)
+    function proceed(){
+        window.location.href="cb_plus4.html"
+    }
+
+    //function for update price
+    let update_price=document.querySelectorAll("#pln")
+    update_price.forEach(function(ele){
+        ele.innerHTML=price
+    })
+
+
+
+    // function for update date
+    let today=new Date();
+    today=today.toISOString().slice(0, 10);
+
+    document.querySelector("#start_date").innerHTML=today
+    if(price==250){
+        let d=new Date();
+        let year=d.getFullYear();
+        let month=d.getMonth();
+        let day=d.getDate();
+        let fulldate=new Date(year, month, day + 90);
+        let toDate=fulldate.toISOString().slice(0, 10);
+        document.querySelector("#end_date").innerHTML=toDate
+    }else{
+        let d=new Date();
+        let year=d.getFullYear();
+        let month=d.getMonth();
+        let day=d.getDate();
+        let fulldate=new Date(year +1, month, day + 1);
+        let toDate=fulldate.toISOString().slice(0, 10);
+        document.querySelector("#end_date").innerHTML=toDate
+    }
+
+
+
+    // function for go back
+    function goBack(){
+        location.replace("cb_plus1.html")
+    }
+
+
+
+</script>

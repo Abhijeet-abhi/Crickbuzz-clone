@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../news/style.css">
+    <link rel="stylesheet" href="cb_plus.css">
+</head>
+<body>
+    <div class="main">
+        <div class="cbp_nav">
+            <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="">
+        </div>   
+    </div>
+
+    <div class="main">
+        <div id="plan_main">
+            <div id="plan_main1" class="bt">
+                <h3 class="blk fs24 mt60">Plan Summary</h3>
+                <hr class="line mt20">
+                <div class="mt20 wd100">
+                    <div id="ch" class="wd100">
+                        <div class="tal">
+                            <p class="fs14" id="pln1">Cricbuzz Plus + Times Prime</p>
+                            <p class="bld mt5 fs18" id="pln2">Annual Combo Plan</p>
+                        </div>
+                        <div class="tar">
+                            <p class="fs14">INR <span id="update_price" class="bld fs18" >0</span></p>
+                        </div> 
+                    </div>
+                    <div id="ch1" class="df">
+                        <div class="fs14 wd50 tal">Billing starts on</div>
+                        <div class="bld fs14 wd50 tar">Today</div>
+                    </div>
+                    <hr class="line">
+                    <div id="ch1" class="df">
+                        <div class="fs14 wd50 tal">Billing Cycle</div>
+                        <div class="bld fs14 wd50 tar" id="pln">Annual</div>
+                    </div>
+
+                </div>
+                <button class="ctop" onClick="continueToPay()">Continue</button>
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    let price=JSON.parse(localStorage.getItem("price"))
+    document.querySelector("#update_price").innerHTML=price
+    if(price==250){
+        document.querySelector("#pln").innerHTML="Quarterly"
+        document.querySelector("#pln1").innerHTML="Cricbuzz Plus"
+        document.querySelector("#pln2").innerHTML="Quarterly Plan"
+    }else if(price==500){
+        document.querySelector("#pln1").innerHTML="Cricbuzz Plus"
+        document.querySelector("#pln2").innerHTML="Annual Plan"
+    }
+
+    function continueToPay(){
+        window.location.href="cb_plus3.html"
+    }
+</script>

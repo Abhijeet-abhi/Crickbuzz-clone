@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../news/style.css">
+    <link rel="stylesheet" href="cb_plus.css">
+ 
+</head>
+<body>
+    <div class="main">
+
+
+
+
+
+
+        <div class="cbp_nav">
+            <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="">
+            <button class="btn_all_plan">View all plans</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="cb_plan">
+            <div class="cb_plan1">
+                <h2>Get 15 Subscriptions with 1 Plan and save INR 10000!</h2>
+                <p>Cricbuzz Plus + Times Prime</p>
+                <h1>Annual Combo Plan</h1>
+                <button class="btn_all_plan btn_ul" onclick="myfunction1()">Unlock Now For INR 999</button>
+                <button class="btn_all_plan btn_lm">Learn more</button>
+                <p class="fs_12">By continuing you agree to <span class="ul">Cancellation & Refund Policy</span></p>
+            </div>
+            <div class="cb_plan2">
+                <div class="circle">
+                    <img src="https://www.cricbuzz.com/a/img/v1/401x301/i1/c235844/hero_plan.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="coupon">
+            <p>Have a coupon? <span class="ul black">Redeem Now</span></p>
+        </div>
+        <div class="plus_ben">
+            <h3 class="blk">Cricbuzz Plus Benefits</h3>
+            <p>Unlock Cricbuzz Plus to enjoy these benefits on website and mobile app.</p>
+            <div class="pb_main">
+
+                <!-- <div class="pb_main_child">
+                        <img src="https://www.cricbuzz.com/a/img/v1/120x120/i1/c222004/feature_image.jpg" alt="">
+                    <div>
+                        <div>EXCLUSIVE DEALS</div>
+                        <div>Avail benefit of amazing deals on great products</div>
+                    </div>
+                </div> -->
+                
+            </div>
+            <p>And many more upcoming amazing features</p>
+        </div>
+        <hr class="line">
+        <div class="plus_ben">
+            <h3 class="blk">SELECT YOUR PLAN</h3>
+            <!-- <form action="" class="form"> -->
+                <div class="sel_your_plan">
+
+                    <div>
+                        <label class="sel_pla">
+                            <input class="input_plan" type="radio" name="plan" value="999" checked>
+                            <div class="sel_plan1">
+                                <span class="dis_spn">IPL Special Discount</span>
+                                <p class="fs10 ml60 mt10">CRICBUZZ PLUS + TIMES PRIME &nbsp;<span class="ml10 blk wht">INR</span>  <span class="lt fs14 blk wht">1199</span> </p>
+                                <p class="bld fs14 ml60">Annual Combo Plan &nbsp;<span class="blk wht ml15">INR</span> <span class="fs24 bld blk wht">999</span></p>
+                            </div>
+                    </div>
+                    <div>
+                        <label class="sel_pla">
+                            <input class="input_plan" type="radio" name="plan" value="500">
+                            <div class="sel_plan1">
+                                <span class="dis_spn">Early Bird Offer</span>
+                                <p class="fs10 ml60 mt10">CRICBUZZ PLUS&#160;<span class="blk wht ml90">INR</span>  <span class="lt fs14 blk wht">750</span> </p>
+                                <p class="bld fs14 ml60">Annual Plan &nbsp;<span class="blk wht ml60">INR</span> <span class="fs24 bld blk wht">500</span></p>
+                            </div>
+                    </div>
+                    <div>
+                        <label class="sel_pla">
+                            <input class="input_plan" type="radio" name="plan" value="250">
+                            <div class="sel_plan1">
+                                <p class="fs10 ml60 mt30">CRICBUZZ PLUS</p>
+                                <p class="bld fs14 ml60">Quarterly Plan &nbsp;<span class="blk wht ml50">INR</span> <span class="fs24 bld blk wht">250</span></p>
+                            </div>
+                    </div>
+                    <div class="sel_pla fs10 lh15 p10">Save more than INR 10000 with this combo plan. Get 1 year subscription of Cricbuzz Plus and Times Prime. Get complimentary access to 6 Months of Disney+ Hotstar, 6 Months of SonyLIV, 3 Months of Zomato Pro & much more with Times Prime. <br> View Full Details</div>
+                    <div class="sel_pla fs10 lh15 p10">Get 1 year subscription of Cricbuzz Plus. And enjoy exclusive articles, videos and more without any intrusive Ads.</div>
+                    <div class="sel_pla fs10 lh15 p10">Get 90 days of Cricbuzz Plus. And enjoy exclusive articles, videos and more without any intrusive Ads.</div>
+
+
+                </div>
+            
+
+            
+            <div class="plus_ben">
+                <input type="checkbox" class="chkbx">
+                <label for="" class="fs11">I agree with the <span class="blue">Cancellation & Refund Policy</span> of Cricbuzz</label>
+                <br>
+                <!-- <input type="submit" class="ctop"> -->
+                <button class="ctop" onClick="myfunction()">Continue to payment</button>
+            </div>
+        <!-- </form> -->
+       
+
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
+
+<script>
+
+//function for checkbox and continue to payment for plus member
+function myfunction(){
+   let val=document.querySelector('input[name="plan"]:checked').value;
+   let check=document.querySelector('.chkbx').checked;
+   if(check){
+    document.querySelector('.ctop').disabled=false;
+    localStorage.setItem("price",JSON.stringify(val))
+   window.location.href="cb_plus2.html"
+   }
+}
+//function for plus membership unloack now for 999 
+function myfunction1(){
+    localStorage.setItem("price",JSON.stringify("999"))
+    window.location.href="cb_plus2.html"
+}
+
+
+//function for display plus benifit
+    function displayPlusBen(data){
+        data.forEach(function(ele){
+            let pb_main_child=document.createElement("div")
+            pb_main_child.setAttribute("class","pb_main_child")
+                let image=document.createElement("img")
+                image.setAttribute("src",ele.image)
+                let div=document.createElement("div")
+                    let div1=document.createElement("div")
+                    div1.innerText=ele.div1
+                    let div2=document.createElement("div")
+                    div2.innerText=ele.div2
+                div.append(div1,div2)
+            pb_main_child.append(image,div)
+            document.querySelector(".pb_main").append(pb_main_child)
+        });
+    }
+    let plusBen=[
+        {image:"https://www.cricbuzz.com/a/img/v1/120x120/i1/c222004/feature_image.jpg",div1:"EXCLUSIVE DEALS",div2:"Avail benefit of amazing deals on great products"},
+        {image:"https://www.cricbuzz.com/a/img/v1/120x120/i1/c218378/feature_image.jpg",div1:"NEWS",div2:"Read amazing articles written by some of the best cricket writers"},
+        {image:"https://www.cricbuzz.com/a/img/v1/120x120/i1/c218379/feature_image.jpg",div1:"MATCH PARTY",div2:"Join virtual match parties live with fans for select IPL and WC matches"},
+        {image:"https://www.cricbuzz.com/a/img/v1/120x120/i1/c218376/feature_image.jpg",div1:"VIDEOS",div2:"Watch exclusive shows like Retro Reels, Cricbuzz in Conversation and more"},
+        {image:"https://www.cricbuzz.com/a/img/v1/120x120/i1/c219068/feature_image.jpg",div1:"MATCH CLIPS",div2:"Watch In-match clips for BBL and Ashes"},
+        {image:"https://www.cricbuzz.com/a/img/v1/120x120/i1/c223048/feature_image.jpg",div1:"NO ADS",div2:"Experience Cricbuzz without any Intrusive Ads"},
+    ]
+    displayPlusBen(plusBen)
+</script>

@@ -123,6 +123,7 @@ function displayab(tweetData){
     })
 }
 
+
 let dataForPhoto=[
     {image:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c235945/india-vs-south-africa-3rd-t20.jpg",p5:"India vs South Africa, 3rd T20I, Vizag",p4:"Tue, Jun 14 2022"},
     {image:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c235913/england-vs-new-zealand-2nd-te.jpg",p5:"England vs New Zealand, 2nd Test, Day 5",p4:"Tue, Jun 14 2022"},
@@ -133,11 +134,11 @@ let dataForPhoto=[
     ]
 
 let dataForNews=[
-    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c235864/once-a-test-specialist-hazlew.jpg",p1:"THINK TANK",p2:"Hard to hit: How Test specialists are turning over a new leaf in T20 bowling",p3:"The latest answer to counter batting domination was always right in front of our eyes. But why has it come to the forefront now?",p4:"1d ago"},
     {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c235608/shane-bond-meets-the-local-pre.jpg",p1:"CRICBUZZ REWIND",p2:"Live and Let Fly: Shane Bond's unforgettable club season in Cumbria",p3:"In the summer of 1999, the chairman of an out-of-luck club took a gamble on an unknown 23-year-old New Zealander, with spectacular results",p4:"Jun 10 2022"},
     {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c235420/theres-a-reason-why-marcus-co.jpg",p1:"DIALOGUE ROOM",p2:"The Marcus behind 'Stoin'",p3:"The larger-than-life and fun-loving 'Stoin' or the sensitive and deep-thinking Marcus: which one's the real Marcus Stoinis? In a candid chat with Cricbuzz, the Australian all-rounder opens up on the 'two different types of people' he is, the big role his father played in how he approaches life and cricket, and more",p4:"Jun 06 2022"},
     {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c235266/the-victorious-gujarat-titans.jpg",p1:"DIALOGUE ROOM",p2:"Behind the scenes of Gujarat Titans' IPL win with Gary Kirsten",p3:"How a team that was short on 'rockstars' overcame the odds with good leadership - from the owners down to the captain",p4:"Jun 02 2022"},
     {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c234836/mental-fatigue-or-shot-selecti.jpg",p1:"THINK TANK",p2:"Kohli of 2018 vs 2022: What's changed with his technique",p3:"An illustrative and comparative assessment of what's changed in Virat Kohli's game and what could be going wrong for him in the last two and a half years, a period during which he hasn't hit an international hundred",p4:"May 25 2022"},
+    {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c235864/once-a-test-specialist-hazlew.jpg",p1:"THINK TANK",p2:"Hard to hit: How Test specialists are turning over a new leaf in T20 bowling",p3:"The latest answer to counter batting domination was always right in front of our eyes. But why has it come to the forefront now?",p4:"1d ago"},
     {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c234698/the-74-game-season-has-left-ev.jpg",p1:"REFLECTIONS",p2:"Why a 74-match IPL is ripe for satire",p3:"The extended 2022 IPL has left everyone exhausted - except, that is, for the commercial arm. What are we to make of this exercise in late-stage capitalism as it feels more and more like a second division club competition?",p4:"May 24 2022"},
     {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c234457/he-may-be-in-the-twilight-of-h.jpg",p1:"DIALOGUE ROOM",p2:"The Captain's journal ft. Faf du Plessis",p3:"He may be in the twilight of his career, but the respected South African is still finding meaning in cricket - largely through his journey of leadership. He speaks about his experiences with RCB this season in an exclusive interview",p4:"May 21 2022"},
     {image:"https://www.cricbuzz.com/a/img/v1/205x152/i1/c234025/livingstone-has-been-in-fine-t.jpg",p1:"DIALOGUE ROOM",p2:"'Over the last couple of years, I've channeled my six-hitting ability the right way'",p3:"In an exclusive interview, Livingstone provides a peek into his six-hitting prowess, his uncluttered mind and his IPL experiences",p4:"May 16 2022"},

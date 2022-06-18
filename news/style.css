@@ -1,12 +1,15 @@
 /* ============== universal style=================== */
 *{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #E3E6E3;
+    /* background-color: #E3E6E3; */
 }
 p,svg,div,h4,h2,a,span{
     background-color: white;
 }
-/* ============= style for main div (all_stories) =============== */
+ul,li,a,img,i,href{
+    background-color: transparent;
+    }
+/* ============= style for all pages =============== */
 .main{
     width: 980px;
     margin: auto;
@@ -38,13 +41,13 @@ p,svg,div,h4,h2,a,span{
     text-decoration: none;
 }
 
-/* ======== style for parent div (all_stories) ==========*/
+/* ======== style for parent div (all pages) ==========*/
 .parent{
     width: 100%;
     display: flex;
 }
 
-/* ================= style for child1 and child2 (all_stories) =============== */
+/* ================= style for child1 and child2 (all pages) =============== */
 .child1{
     width: 66%;
     border-right: 1px solid rgb(240, 238, 238);
@@ -88,7 +91,7 @@ p,svg,div,h4,h2,a,span{
 }
 .p3{
     color: gray;
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 0;
     margin-top: 0;
     padding: 10px 0 10px 0;
@@ -110,7 +113,7 @@ p,svg,div,h4,h2,a,span{
     border-top: 1px solid rgb(239, 237, 237);
 }
 
-/* ===================== style for child2 (all_stories) ========================= */
+/* ===================== style for child2 (all pages) ========================= */
 .child2{
     width: 34%;
 }
