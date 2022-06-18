@@ -100,7 +100,11 @@ function displayPointTable(pointArr){
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
         let td2 = document.createElement("td");
+<<<<<<< HEAD
         td1.setAttribute("class", "textcenter");
+=======
+       
+>>>>>>> 65d03c77b4006bb9075447346145f1d213a1cead
         let td3 = document.createElement("td");
         let td4 = document.createElement("td");
         let td5 = document.createElement("td");
@@ -122,6 +126,7 @@ function displayPointTable(pointArr){
         td7.innerText = el.nr;
         td8.innerText = el.points;
         td9.innerText = el.pct;
+<<<<<<< HEAD
         
 
         td1.setAttribute("class", "textcenter")
@@ -135,6 +140,9 @@ function displayPointTable(pointArr){
         td9.setAttribute("class", "textcenter")
 
         
+=======
+
+>>>>>>> 65d03c77b4006bb9075447346145f1d213a1cead
         tr.append(td1,td2, td3,td4, td5,td6,td7, td8, td9)
         tbody.append(tr);
         console.log(td2);
