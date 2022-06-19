@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.main{
+    width: 100%;
+}
+.content{
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    /* padding: 30px 0px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content>#submenu{
+    display: flex; 
+    border-bottom: 1px solid #ccc;   
+    margin-bottom: 10px;
+}
+.content>#submenu>a{
+    padding: 10px;
+    font-weight: bold;
+}
+.content>#submenu>a:hover{
+    cursor: pointer;
+}
+
+
+.selected{
+    color: green;
+    border-bottom: 3px solid green;
+    font-weight: bold;
+}
+#pageLoadSection{
+    width: 100%;
+
+}
+.matchdaybyday>h1{
+    margin:20px 20px;
+}
+
+.secondSubmenu{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+.secondSubmenu>a{
+    padding: 5px 10px;
+    display: block;
+    background-color: rgba(206, 240, 206, 0.623);
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
+}
+#international{
+    width: 100%;
+
+}
+#international>p{
+    margin: 20px 10px;
+    font-weight: bold;
+    background-color: #aaa;
+    padding: 10px 0px;
+}
+#international>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+#international>div>div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#international>div>div>div{
+    width: 32%;
+}
+
+#international>div>div>div:nth-child(1)>p{
+    font-weight: bold;
+}
+
+
+#international>div>div>div:nth-child(2)>p{
+line-height: 30px;
+}
+
+#international>div>div>div:nth-child(3)>p{
+    line-height: 30px;
+}
+
+
+#teams>.secondSubmenu+div{
+    display: flex;
+    border-top: 1px solid #CCC;
+    padding-top: 30px;
+}
+#teamsflags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 70%;
+    border-right: 1px solid #ccc;
+}
+
+#teamsflags>div{
+    display: flex;
+    gap: 10px;
+    width: 40%;
+    align-items: center;
+}
+#news{
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+#news>h1{
+    color: green;
+    margin-bottom: 20px;
+}
+#news>div>div{
+    display: flex;
+    gap: 10px;
+}
+#news>h1+div+p{
+    text-align: center;
+    color: #fff;
+    background-color: green;
+    width: 40%;
+    margin: 30px auto;
+    padding: 10px 10px;
+}
+#news>h1+div+p:hover{
+    cursor: pointer;
+}
+#tweets{
+    width: 90%;
+    height: 400px;
+    overflow: scroll;
+    margin: 50px auto;
+}
+
+#series>div{
+    display: flex;
+}
+#series>div>div:first-child{
+    width: 70%;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+}
+#series>div>div:first-child>h1{
+    font-size: 20px;
+    margin-top: 15px;
+
+}
+#series>div>div:first-child>div{
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+#series>div>div:first-child>div>div>h3{
+    color: green;
+}
+#series>div>div:first-child>div>div>p{
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+#series>div>div:last-child h1{
+    text-align: center;
+    color: red;
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+
+#currentandfuture>div>div>div{
+    display: flex;
+}
+
+#currentandfuture>div>div>div:first-child{
+    background-color: #aaa;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#currentandfuture>div>div>div>:nth-child(1){
+    width: 20%;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+
+#currentandfuture>div>div>div>:nth-child(2){
+    width: 80%;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+#currentmath>.secondSubmenu+div{
+    display: flex;
+}
+#currentmath> h1{
+    font-size: 20px;
+    margin-left: 20px;
+ 
+}
+
+#liveScore>p:nth-child(1){
+    background-color: #ccc;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+#liveScore>p{
+    line-height: 40px;
+}
+#liveScore>p:nth-child(2){
+    font-size: 16px;
+    font-weight: bold;
+}
+
+

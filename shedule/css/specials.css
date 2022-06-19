@@ -1,0 +1,25 @@
+#specials{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:10px 15px 15px 15px;
+}
+#specials>h5{
+    color: #009270;
+    font-weight: bold;
+}
+#specials>div>img{
+    width:100%;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+#specials>div>a{
+ 
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+#specials>div>p{
+    margin-bottom:20px;
+    font-size:14px;
+    color:grey;
+    line-height: 20px;
+}
