@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        /* footer css */
+
+footer{
+    width: 100%;
+    margin: auto;
+}
+footer>.footer{
+    padding: 50px 0px;
+}
+.footer{
+    /* margin-top:30px; */
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4a4a4a;
+}
+.footer>#all{
+    width:80%;
+    font-size:13px;
+    display:flex;
+    margin:auto;
+    color:white;
+justify-content: space-around;
+}
+#all>div>img{
+    width:100px;
+    height:100px;
+}
+#all>div>h3{
+    padding:10px 0px 10px 0px;
+}
+#all>div>p{
+    /* line-height:10px; */
+    color:white;
+}
+.footer>p{
+    text-align: center;
+    color:#bababa;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+
+@media all and (min-width:768px) and (max-width:1023px){
+    footer{
+        width: 98%;
+    }
+
+  
+ }
+
+ @media all and (min-width:320px) and (max-width:767px){
+    footer{
+        width: 98%;
+    }
+ }
+
+
+
+/* content css */
+        #biggest
+        {
+            
+            background-color:#e3e6e3 ;
+        }
+        #play:hover
+        {
+            transform: scale(1.3);
+            color: black;
+        }
+       #foricon
+       {
+        position: relative;
+        /* border: solid; */
+       }
+        #icon
+        {
+            /* border: solid; */
+            position: absolute;
+            width:0px;
+            top:32%;
+            left:40%;
+           
+        }
+        img
+        {
+            cursor: pointer
+        }
+       
+        /* My task */
+        #content
+        {
+            
+            /* border:solid; */
+            width:980px;
+            margin: auto;
+            background-color: white;
+            padding:11px
+            
+        }
+       
+        #parts
+        {
+            /* border: solid; */
+           
+            display:flex;
+            width:330px;
+            justify-content: space-between;
+            cursor: pointer;
+           
+        }
+
+
+                                                              /* Apply change here */
+        #parts>div:nth-child(1)
+        {
+         border-bottom: solid green;
+         color: green;
+        }
+
+        #parts+div
+        {
+           
+            width: 100%;
+            padding: 0px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+            box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+            margin-left: 0px;
+        }
+        .cat
+        {
+           
+            /* border:solid; */
+            display: grid;
+            grid-template-columns: repeat(11,80px);
+            gap:10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+            box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+           
+            /* margin-left: 0px; */
+           
+            padding-top:20px;
+            padding-bottom: 20px;
+            text-align: center;
+            
+            
+        }
+        .navS
+        {
+            display:flex;
+            justify-content: space-between;
+            margin-left:10px ;
+            margin-right: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+            box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+        }
+        .vid
+        { 
+            /* border: solid; */
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:40px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+            box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="container">
+
+        <div  id="biggest">
+
+            <div id="content">
+           
+<!-- header or Nav bar -->
+        <div id="top">
+            <ul id="up">
+                <li class="ml10"><img src="https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.svg" alt=""></li>
+                <li><a href="#">Live Scores</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Archives</a></li>
+                <li><a href="#">News <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul id="dropDownBox">
+                            <li><a href="all_stories.html">All Stories</a></li>
+                            <li><a href="cricbuzz_plus.html">Cricbuzz Plus</a></li>
+                            <li><a href="news.html">Latest News</a></li>
+                            <li><a href="topics.html">Topics</a></li>
+                            <li><a href="spotlight.html">Spotlight</a></li>
+                            <li><a href="opinions.html">Opinion</a></li>
+                            <li><a href="special.html">Specials</a></li>
+                            <li><a href="stats.html">Stats & Analysis</a></li>
+                            <li><a href="interview.html">Interviews</a></li>
+                            <li><a href="live_blog.html">Live Blogs</a></li>
+                            <li><a href="">Harsha Bhogle</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Series <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul id="dropDownBox">
+                            <li> <a href="">South Africa tour of India,2022</a> </li>
+                            <li><a href="">Australia tour of Sri Lanka, 2022</a> </li>
+                            <li> <a href="">New Zealand of England,2022 </a></li>
+                            <li><a href="">Bangladesh tour of West Indies,2022</a> </li>
+                            <li><a href="">England tour of Netherlands,2022 </a> </li>
+                            <li> <a href="">England tour of Netherlands, 2022 </a></li>
+                            <li> <a href="">T20 Blast 2022</a> </li>
+                            <li> <a href="">Ranji Trophy 2021-22 </a></li>
+                            <li> <a href="">ICC Cricket World Cup League Two 2019-23 </a></li>
+                            <li> <a href="">All Series » </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Teams <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown" style="width: 400px;">
+                        <div>
+
+                            <ul id="dropDownBox">
+                                <h4 style="margin-top: 20px; color: black;">TEST TEAMS</h4>
+                                <li><a href=""></a>India</li>
+                                <li><a href=""></a>Ireland</li>
+                                <li>Pakistan</li>
+                                <li><a href="">Australia</a></li>
+                                <li><a href="">Sri lanka</a></li>
+                                <li><a href="">Bangladesh</a></li>
+                                <li><a href="">England</a></li>
+                                <li><a href="">West Indies</a></li>
+                                <li><a href="">South Africa</a></li>
+                                <li><a href="">Zimbabwe</a></li>
+                                <li><a href="">New Zealand</a></li>
+                                <li><a href="">Afganistan</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul id="dropDownBox">
+                                <h4 style="margin-top: 20px; color: black;">ASSOCIATE</h4>
+                                <li><a href="">Belgium</a></li>
+                                <li><a href="">Italy</a></li>
+                                <li><a href="">Botswana</a></li>
+                                <li><a href="">Iran</a></li>
+                                <li><a href="">Denmark</a></li>
+                                <li><a href="">Singapore</a></li>
+                                <li><a href="">Namibia</a></li>
+                                <li><a href="">Canada</a></li>
+                                <li><a href="">Uganda</a></li>
+                                <li><a href="">Malaysia</a></li>
+                                <li><a href="">Nepal</a></li>
+                                <li><a href="">Germany</a></li>
+                                <li><a href="">More..</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Videos <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul id="dropDownBox">
+                            <li><a href="">All videos</a></li>
+                            <li><a href="">Catagories</a></li>
+                            <li><a href="">Playlists</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="../Ranking/batting/batting.html">Ranking <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul id="dropDownBox">
+                            <li><a href="../Ranking/batting/batting.html">ICC Rankings Men</a></li>
+                            <li><a href="">ICC Rankings Women</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">More <i class="fas fa-sort-down"></i></a>
+                    <div class="dropDown">
+                        <ul id="dropDownBox">
+                            <li><a href="">World Test Championship</a></li>
+                            <li><a href="">World Cup Super League</a></li>
+                            <li><a href="">Quiz</a></li>
+                            <li><a href="">Photos</a></li>
+                            <li><a href="">Mobile Apps</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><button><a id="cp_btn" href="../cricbuzz plus/cb_plus1.html">Cricbuzz Plus</a> </button></li>
+                <span class="bt blk">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bt blk" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                  </span>
+                <span class="bt blk"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bt blk" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg></span>
+                  
+            </ul>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div  id="biggest"> -->
+    <!-- <div id="Navbar2">
+
+        <div id="in">
+ 
+</div>
+
+   </div> -->
+
+<!-- <div id="content"> -->
+<div><h1>All Cricket Videos</h1></div>
+
+<div id="parts">
+   <div> <h3>All Videos</h3></div>  
+   <div><h3> Categories</h3></div>
+     <div><h3> Playlists</h3></div>
+</div>
+
+
+
+<div id="Videob" >
+
+<div class="cat">
+    
+</div>
+</div>
+
+<div class="navS"> 
+    <h2>Latest Videos</h2>
+    <h2><a >View All</a></h2>
+</div>
+
+
+
+<!--  1st raw of video -->
+
+<div id="vid101" class="vid">
+
+    
+</div>
+
+<!-- 2nd video raw -->
+
+<div class="navS"> 
+    <h2>India</h2>
+    <h2><a >View All</a></h2>
+</div>
+
+<div id="vid102" class="vid">
+
+</div>
+
+
+
+<!-- 3rd raw of videos -->
+
+<div class="navS"> 
+    <h2>Playlists</h2>
+    <h2><a >View All</a></h2>
+</div>
+
+<div id="vid103" class="vid">
+
+</div>
+
+<!-- half compelete -->
+
+
+
+<!-- catogries -->
+<div>
+    <h2>Categories</h2>
+    <div class="cat">
+        <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c214720/cms-img.jpg",alt="Error">
+        <p>Press Confrence</p></div> 
+    
+        <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c130703/cms-img.jpg",alt="Error">
+            <p>Cricbuzz Live
+                </p>
+        </div>
+    
+        <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c130702/cms-img.jpg",alt="Error">
+            <p>Cricbuzz LIVE - Talking Points
+                </p>
+        </div>
+    
+        <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c130699/cms-img.jpg",alt="Error">
+            <p>Cricbuzz Live - Talking</p></div>
+    
+        <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c230505/cms-img.jpg",alt="Error">
+            <p>Cricbuzz Live Hindi</p></div>
+    
+        <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c216792/cms-img.jpg",alt="Error">
+            <p>Cricbuzz Comm Box</p></div>
+            <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c209468/cms-img.jpg",alt="Error">
+                <p>Retro Reels</p></div>
+
+    
+        <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c216798/cms-img.jpg",alt="Error">
+            <p>News Roundup</p></div>
+    
+        <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c214719/cms-img.jpg",alt="Error">
+            <p>Retro Reels</p></div>
+            <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c142858/cms-img.jpg",alt="Error">
+                <p>Retro Reels</p></div>
+                <div><img src="https://www.cricbuzz.com/a/img/v1/72x72/i1/c188548/cms-img.jpg",alt="Error">
+                    <p>Retro Reels</p></div>
+    </div>
+
+<!-- video line start -->
+
+
+    <div class="navS"> 
+        <h2>Cricbuzz in Conversation</h2>
+        <h2><a >View All</a></h2>
+    </div>
+    
+    <div id="vid104" class="vid">
+    
+    </div>
+<!-- 2nd raw -->
+<div class="navS"> 
+    <h2>Match Clips of India tour of England, 2021</h2>
+    <h2><a >View All</a></h2>
+</div>
+
+<div id="vid105" class="vid">
+
+</div>
+
+
+<!-- 3rd raw -->
+<div  class="navS"> 
+    <h2>Match Clips of India tour of Sri Lanka, 2021</h2>
+    <h2><a >View All</a></h2>
+</div>
+
+<div id="vid106" class="vid">
+
+</div>
+
+
+</div>
+
+
+
+<footer>
+    <div class="footer">
+        <div id="all">
+            <div>
+                <img src="https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.svg" alt="">
+            </div>
+            <div>
+                <h3>MOBILE SITE & APPS</h3>
+                <p><i class="fa-light fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;m.cricbuzz.com</p>
+                <p><i class="fa-brands fa-android"></i>&nbsp;&nbsp;&nbsp;Android</p>
+                <p><i class="fa-brands fa-apple"></i>&nbsp;&nbsp;&nbsp;&nbsp;Apple</p>
+            </div>
+            <div>
+                <h3>FOLLOW US ON</h3>
+                <p><i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;Facebook</p>
+                <p><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;twitter</p>
+                <p><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;Youtube</p>
+                <p><i class="fa-brands fa-pinterest-p"></i>&nbsp;&nbsp;&nbsp;Pinterest</p>
+            </div>
+            <div>
+                <h3>COMPANY</h3>
+                <p>Careers</p>
+                <p>Advertise</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Cricbuzz TV Ads</p>
+            </div>
+
+        </div>
+        <p>© 2022 Cricbuzz.com, Times Internet Limited. All rights reserved | The Times of India | Navbharat Times</p>
+    </div>
+    <div class="copyright"></div>
+</footer>
+
+
+</div>
+
+
+
+
+</body>
+</html>
+<script>
+    let data=
+    [
+    {vid:"https://www.cricbuzz.com/a/img/v1/72x72/i1/c130699/cms-img.jpg",
+     line:"Press Confrence"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/72x72/i1/c216792/cms-img.jpg",
+     line:"Cricbuzz Live"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/72x72/i1/c214719/cms-img.jpg",
+     line:"Cricbuzz LIVE - Talking Points"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/72x72/i1/c229114/cms-img.jpg",
+     line:"Cricbuzz Live - Talking"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/72x72/i1/c209468/cms-img.jpg",
+     line:"Cricbuzz Live Hindi"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/72x72/i1/c157757/cms-img.jpg",
+     line:"Cricbuzz Comm Box"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/72x72/i1/c130702/cms-img.jpg",
+     line:"News Roundup"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/72x72/i1/c230505/cms-img.jpg",
+     line:"Retro Reels"},
+    ]
+   let cat= document.querySelector(".cat")
+
+   data.forEach(function(el)
+   {
+  let div=document.createElement("div")
+  let img=document.createElement("img")
+  img.setAttribute("src",el.vid)
+  let p=document.createElement("P")
+  p.innerText=el.line
+  div.append(img,p)
+  cat.append(div)
+   })
+
+
+   let Vid1=
+   [
+    {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c236146/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Dominant India floor South Africa in 4th T20I! Cricbuzz Panel react",
+     time:"11hr ago"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c236108/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Dinesh Karthik के पास है T20 की हर situation का हल: Parthiv Patel",
+     time:"12hr ago"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c236106/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Hardik Pandya और Dinesh Karthik ने निभाई एक परफेक्ट T20 p'ship: Ashish Nehra",
+     time:"13hr ago"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c236102/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Cricbuzz Live: India v South Africa, 4th T20I, Mid-innings show",
+     time:"13hr ago"},
+     
+   ]
+
+ let vid= document.querySelector("#vid101") 
+
+ Vid1.forEach(function(el)
+ {
+    let outer=document.createElement("div")
+    outer.setAttribute("id","con")
+    
+
+
+
+  let div=document.createElement("div")
+   div.setAttribute("id","foricon")
+  let img=document.createElement("img")
+  img.setAttribute("src",el.vid)
+  img.style.width="100%"
+  img.style.borderRadius="2px"
+  img.addEventListener("click",tranfer)
+
+let icondiv=document.createElement("div")
+icondiv.setAttribute("id","icon")
+let iconimg=document.createElement("img")
+iconimg.src=el.img
+iconimg.setAttribute("id","play")
+iconimg.style.width="50px"
+
+icondiv.append(iconimg)
+div.append(icondiv)
+
+let textdiv=document.createElement("div")
+  let h5=document.createElement("h3")
+  h5.innerText=el.tag
+  let p=document.createElement("p")
+  p.innerText=el.time
+  p.style.lineHeight="3px"
+  p.style.marginBottom="40px"
+
+
+  div.append(img,)
+  textdiv.append(h5,p)
+  outer.append(div,textdiv)
+  vid.append(outer)
+
+ })
+
+  function tranfer()
+  {
+    window.location.href="playvid.html"
+  }
+
+
+
+ let raw2=
+[
+{vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c236108/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Hardik Pandya और Dinesh Karthik ने निभाई एक परफेक्ट T20 p'ship: Ashish Nehra",
+     time:"1hr ago"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c236108/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Dinesh Karthik के पास है T20 की हर situation का हल: Parthiv Patel",
+     time:"1hr ago"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c236106/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Ishan's ability to attack fearlessly makes him special: Joy Bhattacharjya",
+     time:"13hr ago"},
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c236092/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Chahal's goal is to reclaim World Cup spot he missed in 2021: Zaheer Khan",
+     time:"13hr ago"},
+]
+
+let vid102= document.querySelector("#vid102") 
+
+ raw2.forEach(function(el)
+ {
+    let outer=document.createElement("div")
+    outer.setAttribute("id","con")
+    
+
+
+
+  let div=document.createElement("div")
+   div.setAttribute("id","foricon")
+  let img=document.createElement("img")
+  img.setAttribute("src",el.vid)
+  img.style.width="100%"
+  img.style.borderRadius="2px"
+
+let icondiv=document.createElement("div")
+icondiv.setAttribute("id","icon")
+let iconimg=document.createElement("img")
+iconimg.src=el.img
+iconimg.setAttribute("id","play")
+iconimg.style.width="50px"
+
+icondiv.append(iconimg)
+div.append(icondiv)
+
+let textdiv=document.createElement("div")
+  let h5=document.createElement("h3")
+  h5.innerText=el.tag
+  let p=document.createElement("p")
+  p.innerText=el.time
+  p.style.lineHeight="3px"
+  p.style.marginBottom="40px"
+
+
+  div.append(img,)
+  textdiv.append(h5,p)
+  outer.append(div,textdiv)
+  vid102.append(outer)
+
+ })
+
+ let raw3=
+[
+{vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c235439/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"South Africa's tour of India, 2022",
+     time:"92 Videos"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c219608/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"IPL 2022",
+     time:"1821 Videos"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c228444/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Women's World Cup, 2022",
+     time:"19 Videos"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c228039/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"India v West Indies, 2022",
+     time:"155 Videos"},
+]
+
+let vid103= document.querySelector("#vid103") 
+
+ raw3.forEach(function(el)
+ {
+    let outer=document.createElement("div")
+    outer.setAttribute("id","con")
+    
+
+
+
+  let div=document.createElement("div")
+   div.setAttribute("id","foricon")
+  let img=document.createElement("img")
+  img.setAttribute("src",el.vid)
+  img.style.width="100%"
+  img.style.borderRadius="2px"
+
+ let icondiv=document.createElement("div")
+icondiv.setAttribute("id","icon")
+let iconimg=document.createElement("img")
+iconimg.src=el.img
+iconimg.setAttribute("id","play")
+iconimg.style.width="50px"
+
+// icondiv.append(iconimg)
+// div.append(icondiv)
+
+let textdiv=document.createElement("div")
+  let h5=document.createElement("h3")
+  h5.innerText=el.tag
+  let p=document.createElement("p")
+  p.innerText=el.time
+  p.style.lineHeight="3px"
+  p.style.marginBottom="40px"
+
+
+  div.append(img,)
+  textdiv.append(h5,p)
+  outer.append(div,textdiv)
+  vid103.append(outer)
+
+ })
+
+
+ let raw4=
+[
+{vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c218762/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Watch: Pat Cummins named captain of Australia's Test team",
+     time:"Nov 26 2021"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c209178/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"A strong bond with Gautam Gambhir at KKR helped me grow: Suryakumar",
+     time:"Jul 14 2021"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c209172/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Watch: Suryakumar Yadav relives his magical maiden knock for Team India",
+     time:"Jul 14 2021"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c209097/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"What makes Mumbai Indians a 'Champion' side? Suryakumar explains",
+     time:"Jul 12 2021"},
+]
+
+let vid104= document.querySelector("#vid104") 
+
+ raw4.forEach(function(el)
+ {
+    let outer=document.createElement("div")
+    outer.setAttribute("id","con")
+    
+
+
+
+  let div=document.createElement("div")
+   div.setAttribute("id","foricon")
+  let img=document.createElement("img")
+  img.setAttribute("src",el.vid)
+  img.style.width="100%"
+  img.style.borderRadius="2px"
+
+let icondiv=document.createElement("div")
+icondiv.setAttribute("id","icon")
+let iconimg=document.createElement("img")
+iconimg.src=el.img
+iconimg.setAttribute("id","play")
+iconimg.style.width="50px"
+
+icondiv.append(iconimg)
+div.append(icondiv)
+
+let textdiv=document.createElement("div")
+  let h5=document.createElement("h3")
+  h5.innerText=el.tag
+  let p=document.createElement("p")
+  p.innerText=el.time
+  p.style.lineHeight="3px"
+  p.style.marginBottom="40px"
+
+
+  div.append(img,)
+  textdiv.append(h5,p)
+  outer.append(div,textdiv)
+  vid104.append(outer)
+
+ })
+
+
+ let raw5=
+[
+{vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c212759/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"ENG v IND, 4th Test: Top Moments ft. Rohit's ton & Shardul's all-round show",
+     time:"Sep 06 2021"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c212763/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"ENG v IND, 4th Test, Top wickets ft. Bumrah's sizzling yorker",
+     time:"Sep 06 2021"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c212769/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"4th Test, 5th Day Full HLS: Bumrah, Jadeja rock England as India take 2-1 lead",
+     time:"Sep 06 2021"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c212764/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"ENG v IND, 4th Test: Full Highlights",
+     time:"Sep 06 2021"},
+]
+
+let vid105= document.querySelector("#vid105") 
+
+ raw5.forEach(function(el)
+ {
+    let outer=document.createElement("div")
+    outer.setAttribute("id","con")
+    
+
+
+
+  let div=document.createElement("div")
+   div.setAttribute("id","foricon")
+  let img=document.createElement("img")
+  img.setAttribute("src",el.vid)
+  img.style.width="100%"
+  img.style.borderRadius="2px"
+
+let icondiv=document.createElement("div")
+icondiv.setAttribute("id","icon")
+let iconimg=document.createElement("img")
+iconimg.src=el.img
+iconimg.setAttribute("id","play")
+iconimg.style.width="50px"
+
+icondiv.append(iconimg)
+div.append(icondiv)
+
+let textdiv=document.createElement("div")
+  let h5=document.createElement("h3")
+  h5.innerText=el.tag
+  let p=document.createElement("p")
+  p.innerText=el.time
+  p.style.lineHeight="3px"
+  p.style.marginBottom="40px"
+
+
+  div.append(img,)
+  textdiv.append(h5,p)
+  outer.append(div,textdiv)
+  vid105.append(outer)
+
+ })
+
+ let raw6=
+[
+{vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c210241/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"SL v IND - Top 5 Knocks ft. Suryakumar Yadav's 50 & Prithvi Shaw's 43",
+     time:"Jul 30 2021"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c210240/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"SL v IND - Top 5 Wickets ft. Deepak Chahar's knuckle-ball",
+     time:"Jul 30 2021"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c210237/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"SL v IND - Top 5 Catches ft. Shikhar Dhawan & Rahul Chahar",
+     time:"Jul 30 2021"},
+
+     {vid:"https://www.cricbuzz.com/a/img/v1/220x124/i1/c210228/cms-img.jpg",
+    img: "http://clipart-library.com/images/8izrb858T.png",
+    tag:"Watch: Suryakumar Yadav's dazzling 360 show vs Sri Lanka",
+     time:"Jul 30 2021"},
+]
+
+let vid106= document.querySelector("#vid106") 
+
+ raw6.forEach(function(el)
+ {
+    let outer=document.createElement("div")
+    outer.setAttribute("id","con")
+    
+
+
+
+  let div=document.createElement("div")
+   div.setAttribute("id","foricon")
+  let img=document.createElement("img")
+  img.setAttribute("src",el.vid)
+  img.style.width="100%"
+  img.style.borderRadius="2px"
+
+let icondiv=document.createElement("div")
+icondiv.setAttribute("id","icon")
+let iconimg=document.createElement("img")
+iconimg.src=el.img
+iconimg.setAttribute("id","play")
+iconimg.style.width="50px"
+
+icondiv.append(iconimg)
+div.append(icondiv)
+
+let textdiv=document.createElement("div")
+  let h5=document.createElement("h3")
+  h5.innerText=el.tag
+  let p=document.createElement("p")
+  p.innerText=el.time
+  p.style.lineHeight="3px"
+  p.style.marginBottom="40px"
+
+
+  div.append(img,)
+  textdiv.append(h5,p)
+  outer.append(div,textdiv)
+  vid106.append(outer)
+
+ })
+</script>
