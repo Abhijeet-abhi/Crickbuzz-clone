@@ -7,6 +7,67 @@
     <title>main rounder</title>
     <link rel="stylesheet" href="../../videos/navbar.css">
     <style>
+           /*         footer */
+        footer{
+    width: 100%;
+    margin: auto;
+}
+footer>.footer{
+    padding: 50px 0px;
+}
+.footer{
+    /* margin-top:30px; */
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4a4a4a;
+}
+.footer>#all{
+    width:80%;
+    font-size:13px;
+    display:flex;
+    margin:auto;
+    color:white;
+justify-content: space-around;
+}
+#all>div>img{
+    width:100px;
+    height:100px;
+}
+#all>div>h3{
+    padding:10px 0px 10px 0px;
+}
+#all>div>p{
+    /* line-height:10px; */
+    color:white;
+}
+.footer>p{
+    text-align: center;
+    color:#bababa;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+
+@media all and (min-width:768px) and (max-width:1023px){
+    footer{
+        width: 98%;
+    }
+
+  
+ }
+
+ @media all and (min-width:320px) and (max-width:767px){
+    footer{
+        width: 98%;
+    }
+ }
+        
+/*       Main work start   */
+        
+        
           #fill2:hover
         {
             cursor: pointer;
@@ -333,6 +394,42 @@
 
 
 </div>
+    
+    
+    
+      <footer>
+        <div class="footer">
+            <div id="all">
+                <div>
+                    <img src="https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.svg" alt="">
+                </div>
+                <div>
+                    <h3>MOBILE SITE & APPS</h3>
+                    <p><i class="fa-light fa-globe"></i>&nbsp;&nbsp;&nbsp;&nbsp;m.cricbuzz.com</p>
+                    <p><i class="fa-brands fa-android"></i>&nbsp;&nbsp;&nbsp;Android</p>
+                    <p><i class="fa-brands fa-apple"></i>&nbsp;&nbsp;&nbsp;&nbsp;Apple</p>
+                </div>
+                <div>
+                    <h3>FOLLOW US ON</h3>
+                    <p><i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;Facebook</p>
+                    <p><i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;twitter</p>
+                    <p><i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;Youtube</p>
+                    <p><i class="fa-brands fa-pinterest-p"></i>&nbsp;&nbsp;&nbsp;Pinterest</p>
+                </div>
+                <div>
+                    <h3>COMPANY</h3>
+                    <p>Careers</p>
+                    <p>Advertise</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Cricbuzz TV Ads</p>
+                </div>
+    
+            </div>
+            <p>© 2022 Cricbuzz.com, Times Internet Limited. All rights reserved | The Times of India | Navbharat Times</p>
+        </div>
+        <div class="copyright"></div>
+    </footer> 
 </body>
 </html>
 <script>
