@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    background-color: #E3E6E3;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}   
+
+.content{
+    width: 80%;
+    /* box-shadow: 2px 2px 3px #000; */
+    box-shadow: 2px 2px 3px #E3E6E3, -2px -2px 3px #E3E6E3;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    margin: 10px auto auto auto;
+    /* border: 1px solid red; */
+}
+.content>div:first-child{
+    background-color:#009270;
+    height: 50px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content>div:last-child{
+    background-color: #FFF;
+}
+
+.path{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 2px #ccc;
+    padding: 5px 0px;
+}
+
+.formContainer{
+    width: 40%;
+    margin: auto auto 250px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.formContainer>h1{
+    margin-top: 70px;
+}
+.formContainer>p{
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.emalbox{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: 1px solid #999;
+}
+.emalbox>.mailicon{
+    width: 10%;
+    font-size: 28px;
+    line-height: 40px;    
+}
+.emalbox>input{
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+.emalbox+div{
+    margin-top: 70px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.submitbtn{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.submitbtn>input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0px;
+    background-color:#009270;
+    border: none;
+    color: #FFF;
+}
+
+.diabled{
+    background-color: #009270;
+    opacity: .5;
+}
+
+.hide{
+    display: none;
+}
+
+/* styles for otp verification part */
+
+.optverifyform{
+    width: 60%;
+    margin: auto auto 250px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+
+}
+.otpinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 40px;
+
+}
+.otpinput>input{
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    padding: 3px;
+    text-align: center;
+}
+
+.optverifyform>h1{
+    margin-top: 70px;
+}
+.formContainer>p{
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+@media all and (min-width:768px) and (max-width:1023px){
+    .content{
+        width: 90%;
+  
+    }
+    .formContainer{
+        width: 70%;
+    }
+}
+
+
+@media all and (min-width:320px) and (max-width:767px){
+    .content{
+        width: 90%;
+  
+    }
+    .formContainer{
+        width: 100%;
+    }
+}

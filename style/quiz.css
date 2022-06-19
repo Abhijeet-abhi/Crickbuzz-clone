@@ -1,0 +1,193 @@
+
+        .main{
+            width: 100%;
+            background-color: #E3E6E3;
+        }
+        .content{
+            width: 80%;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            background-color: #fff;
+        }
+        .content>h2{
+            display: none;
+        }
+        #left{
+            border-right: 1px solid #ccc;
+        }
+      
+        #left>h2{
+            margin: 15px 10px;
+        }
+        #left>div{
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            width: 90%;
+            margin: auto;
+        }
+        #left>div img{
+            border-radius: 3px;
+            width: 160px;
+
+        }
+
+        #left>div>div p:first-child{
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #left>div>div p:last-child{
+            font-size: 12px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #right>div{
+           
+            width: 90%;
+            margin: 20px auto;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        #right>h2{
+           color: green;
+           font-size: 14px;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           margin-left: 15px;
+           margin-bottom: 20px;
+           margin-top: 30px;
+        }
+     
+  
+        #right>div{
+            margin-left: 14px;
+            font-size: 14px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+        }
+   
+        #right button{
+            background-color: #03A685;
+            color: #FFF;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 50px;
+            display: block;
+            border: none;
+            padding: 5px 10px;
+        }
+        
+
+        #right>div img{
+            width:94%;
+            border-radius: 3px; 
+            margin-bottom: 20px;
+            display: block;  
+      }
+      #right>div img:hover{
+        cursor: pointer;
+      }
+       #right>div p:first-child{
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        #right>div p:last-child{
+            font-size: 11px;
+            text-align: left;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+        #right button:hover{
+            cursor: pointer;
+        } 
+
+        @media all and (min-width:768px) and (max-width:1023px){
+            .content{
+                width: 98%;
+                grid-template-columns: 98%;
+                margin: auto;
+            
+            }
+            #left{
+                border: none;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #left>div{
+                gap: 10px;
+                width: 40%;
+                margin-left: 10px;
+            }
+
+            .content>h2{
+                display: block;
+                margin: 15px 10px;
+                
+            }
+            .greentext{
+                color: green;
+                text-align: center;
+            }
+            #left>h2{
+                display: none;
+            }
+            #right>h2{
+                display: none;
+            }
+            #right {
+                display: flex;
+                flex-wrap: wrap;
+            } 
+            #right>div{
+                width: 30%;
+            }
+        }
+
+
+        @media all and (min-width:320px) and (max-width:767px){
+            .content{
+                width: 96%;
+                grid-template-columns: 96%;
+                margin: auto;
+            
+            }
+            #left{
+                border: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            #left>div{
+                gap: 10px;
+                width: 80%;
+                margin-left: 10px;
+            }
+
+            .content>h2{
+                display: block;
+                margin: 15px 10px;
+                
+            }
+            .greentext{
+                color: green;
+                text-align: center;
+            }
+            #left>h2{
+                display: none;
+            }
+            #right>h2{
+                display: none;
+            }
+            #right {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            } 
+            #right>div{
+                width: 40%;
+            }
+        }

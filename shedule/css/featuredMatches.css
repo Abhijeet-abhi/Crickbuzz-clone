@@ -1,0 +1,55 @@
+.featuredMatches{
+    margin:auto;
+    padding:5px 15px 15px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 10px;
+    width:80%;
+}
+#header>h5{
+    color: #009270;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.featuredMatches>#body{
+    display:flex;
+    /* border: 1px solid blue;  */
+    justify-content: space-between;
+}
+.featuredMatches>#body>#first{
+    /* border: 1px solid red; */
+    padding:0px;
+    line-height: 0px;
+    gap:0px;
+    display:grid;
+    grid-template-columns: repeat(3,70px);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "p1 p2 ."
+    "p3 p4 ."
+    "p5 p5 p5";
+}
+.featuredMatches>#body>#first>p{
+    font-size:11.5px;
+}
+.featuredMatches>#body>#first>p:first-child{
+grid-area: p1;
+}
+.featuredMatches>#body>#first>p:nth-child(2){
+    grid-area: p2;
+}
+.featuredMatches>#body>#first>p:nth-child(3){
+    grid-area: p3;
+    color:black;
+}
+.featuredMatches>#body>#first>p:nth-child(4){
+    grid-area: p4;
+    color:black;
+}
+.featuredMatches>#body>#first>p:last-child{
+    grid-area: p5;
+    color:#d3021b;
+    
+}
+
+.featuredMatches>#body>#first:last-child>p:last-child{
+color:#1899eb;
+}
