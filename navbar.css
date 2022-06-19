@@ -54,6 +54,9 @@
         margin-left: -30px;
         margin-right: 20px;
      }
+     #top img:hover{
+        background-color: transparent;
+     }
      #top img:hover, #top button:hover{
          cursor: pointer;
      }
