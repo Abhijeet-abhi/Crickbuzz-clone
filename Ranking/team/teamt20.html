@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team t20</title>
+    <link rel="stylesheet" href="../../videos/navbar.css">
+    <style>
+        button
+        {
+            cursor: pointer;
+        }
+        img:hover
+        {
+            cursor: pointer;
+        }
+         #page
+      {
+        
+        width:100%;
+        background-color: #e3e6e3;
+      }
+        #mainwork
+        {
+            padding: 10px;
+            /* border: solid; */
+            width:980px;
+            margin:auto;
+            background-color: white;
+
+        }
+        
+       h1{
+            line-height:0px ;
+            /* box-shadow:rgba(0, 0, 0, 0.04) 0px 3px 5px */
+        }
+        #fill1
+        {
+           
+            display:flex;
+            width:400px;
+            justify-content: space-between;
+            line-height: 0px;
+            box-shadow:rgba(0, 0, 0, 0.04) 0px 3px 5px;
+           
+        }
+
+        #fill1>div:last-child
+        {
+            border-bottom: solid#009270;
+            box-shadow:rgba(0, 0, 0, 0.04) 0px 3px 5px;
+           
+        }
+        #fill1:hover
+        {
+            cursor: pointer;
+        }
+        #fill2
+        {
+            
+            
+            display: flex;
+            width:300px;
+            justify-content: space-between;
+            padding:15px 0px;
+           
+            font-size: 13px;
+           
+        }
+        #fill2:hover
+        {
+            cursor: pointer;
+        }
+        #fill2>div
+        {
+            border: transparent;
+            border-radius: 20px;
+            line-height: 0px;
+           padding: 0px 20px;
+           
+           background-color: #cfe0db;
+        }
+       
+        #fill2>div:nth-child(3)
+        {
+            background-color:#009270;
+            color: white;
+        }
+/* container */
+        #players
+        {
+            /* border: solid; */
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            
+        }
+
+
+        /* start table work */
+        #table
+        {
+            
+            border: 1px transparent #CCC;
+            
+            border-collapse: collapse;
+            width:590px
+        }
+        #head
+        {
+           
+            line-height: 2px;
+            background-color: #f5f5f5;
+           
+        }
+        tbody
+        {
+            line-height: 0px;
+        }
+        #head>tr>td:last-child
+        {
+            text-align: center;
+           
+        }
+        
+
+        /* start right part */
+        #right
+        {
+            display: block;
+            
+            width:380px
+        }
+        #right>h3
+        {
+            color: green;
+        }
+
+        #content
+        {          
+            display: block;         
+        }
+
+
+        #rightin
+        {          
+            display: flex;
+            align-items: center;           
+        }
+        #but
+        {
+            display: block;
+            width:130px;
+            margin: auto;
+            background-color: #009270;
+            color:white;
+            margin-top: 20px;
+            border: transparent;
+            padding: 8px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+   
+<div id="mainwork">
+    <div id="top">
+        <ul id="up">
+            <li class="ml10"><img src="https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.svg" alt=""></li>
+            <li><a href="#">Live Scores</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">News <i class="fas fa-sort-down"></i></a>
+                <div class="dropDown">
+                    <ul id="dropDownBox">
+                        <li><a href="all_stories.html">All Stories</a></li>
+                        <li><a href="cricbuzz_plus.html">Cricbuzz Plus</a></li>
+                        <li><a href="news.html">Latest News</a></li>
+                        <li><a href="topics.html">Topics</a></li>
+                        <li><a href="spotlight.html">Spotlight</a></li>
+                        <li><a href="opinions.html">Opinion</a></li>
+                        <li><a href="special.html">Specials</a></li>
+                        <li><a href="stats.html">Stats & Analysis</a></li>
+                        <li><a href="interview.html">Interviews</a></li>
+                        <li><a href="live_blog.html">Live Blogs</a></li>
+                        <li><a href="">Harsha Bhogle</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Series <i class="fas fa-sort-down"></i></a>
+                <div class="dropDown">
+                    <ul id="dropDownBox">
+                        <li> <a href="">South Africa tour of India,2022</a> </li>
+                        <li><a href="">Australia tour of Sri Lanka, 2022</a> </li>
+                        <li> <a href="">New Zealand of England,2022 </a></li>
+                        <li><a href="">Bangladesh tour of West Indies,2022</a> </li>
+                        <li><a href="">England tour of Netherlands,2022 </a> </li>
+                        <li> <a href="">England tour of Netherlands, 2022 </a></li>
+                        <li> <a href="">T20 Blast 2022</a> </li>
+                        <li> <a href="">Ranji Trophy 2021-22 </a></li>
+                        <li> <a href="">ICC Cricket World Cup League Two 2019-23 </a></li>
+                        <li> <a href="">All Series » </a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Teams <i class="fas fa-sort-down"></i></a>
+                <div class="dropDown" style="width: 400px;">
+                    <div>
+
+                        <ul id="dropDownBox">
+                            <h4 style="margin-top: 20px; color: black;">TEST TEAMS</h4>
+                            <li><a href=""></a>India</li>
+                            <li><a href=""></a>Ireland</li>
+                            <li>Pakistan</li>
+                            <li><a href="">Australia</a></li>
+                            <li><a href="">Sri lanka</a></li>
+                            <li><a href="">Bangladesh</a></li>
+                            <li><a href="">England</a></li>
+                            <li><a href="">West Indies</a></li>
+                            <li><a href="">South Africa</a></li>
+                            <li><a href="">Zimbabwe</a></li>
+                            <li><a href="">New Zealand</a></li>
+                            <li><a href="">Afganistan</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul id="dropDownBox">
+                            <h4 style="margin-top: 20px; color: black;">ASSOCIATE</h4>
+                            <li><a href="">Belgium</a></li>
+                            <li><a href="">Italy</a></li>
+                            <li><a href="">Botswana</a></li>
+                            <li><a href="">Iran</a></li>
+                            <li><a href="">Denmark</a></li>
+                            <li><a href="">Singapore</a></li>
+                            <li><a href="">Namibia</a></li>
+                            <li><a href="">Canada</a></li>
+                            <li><a href="">Uganda</a></li>
+                            <li><a href="">Malaysia</a></li>
+                            <li><a href="">Nepal</a></li>
+                            <li><a href="">Germany</a></li>
+                            <li><a href="">More..</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../../videos/videos.html">Videos <i class="fas fa-sort-down"></i></a>
+                <div class="dropDown">
+                    <ul id="dropDownBox">
+                        <li><a href="../../videos/videos.html">All videos</a></li>
+                        <li><a href="">Catagories</a></li>
+                        <li><a href="">Playlists</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Ranking <i class="fas fa-sort-down"></i></a>
+                <div class="dropDown">
+                    <ul id="dropDownBox">
+                        <li><a href="">ICC Rankings Men</a></li>
+                        <li><a href="">ICC Rankings Women</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">More <i class="fas fa-sort-down"></i></a>
+                <div class="dropDown">
+                    <ul id="dropDownBox">
+                        <li><a href="">World Test Championship</a></li>
+                        <li><a href="">World Cup Super League</a></li>
+                        <li><a href="">Quiz</a></li>
+                        <li><a href="">Photos</a></li>
+                        <li><a href="">Mobile Apps</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><button><a id="cp_btn" href="../cricbuzz plus/cb_plus1.html">Cricbuzz Plus</a> </button></li>
+            <span class="bt blk">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bt blk" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+              </span>
+            <span class="bt blk"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bt blk" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg></span>
+              
+        </ul>
+    </div>
+
+
+
+<div >
+    <h1>ICC Cricket Rankings - Men's Teams</h1>
+    
+    <div  style="box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;">  <div id="fill1">
+        <div><h3 id="bat">Batting</h3></div>
+                <div> <h3 id="bol"> Bowling</h3></div>
+                <div> <h3 id="rounder"> All-rounders</h3></div>
+                <div> <h3 id="team"> Teams</h3></div>
+           
+</div>
+</div>
+
+
+<div id="fill2">
+    <div id="test"><h3>TEST</h3></div>
+    <div><h3 id="odi">ODI</h3></div>  
+      <div><h3 id="t20">T20</h3></div>
+</div>
+
+<p>* The ratings are officially updated after each series rather than after each Test</p>
+<div id="players">
+
+
+
+<div id="left">
+    <table id="table">
+<thead id="head">
+    <tr>
+        <td><h3>Position</h3></td>
+       <td></td>
+        <td><h3>Player</h3></td>        
+        <td style="text-align:center ;"><h3>Rating</h3></td>
+        <td><h3>Points</h3></td>
+    </tr>
+</thead>
+<tbody>
+
+</tbody>
+
+    </table>
+
+</div>
+
+
+
+
+
+<div id="right">
+    <h3>LATEST NEWS</h3>
+
+ 
+</div> 
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+    <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+  </svg> -->
+
+</body>
+</html>
+<script>
+
+let data=
+[
+    {pos:"1",
+name:"INDIA" ,p:"ENGLAND",rate:"266",point:"8502"},
+
+{pos:"2", 
+name:"ENGLAND" ,p:"AUSTRALIA",rate:"265",point:"7432"},
+
+{pos:"3",
+name:"PAKISTAN" ,p:"AUSTRALIA",rate:"261",point:"7826"},
+
+{pos:"4",
+name:"SOUTH AFRICA" ,p:"PAKISTAN",rate:"258",point:"6974"},
+
+{pos:"5",
+name:"AUSTRALIA" ,p:"PAKISTAN",rate:"250",point:"9009"},
+
+{pos:"6",
+name:"NEW ZEALAND" ,p:"PAKISTAN",rate:"250",point:"6996"},
+
+{pos:"7",
+name:"WEST INDIES" ,p:"PAKISTAN",rate:"240",point:"8624"},
+
+{pos:"8",
+name:"BANGLADESH" ,p:"PAKISTAN",rate:"233",point:"7680"},
+
+{pos:"9",
+name:"SRI LANKA" ,p:"PAKISTAN",rate:"231",point:"8310"},
+
+{pos:"10",
+name:"AFGHANISTAN" ,p:"PAKISTAN",rate:"228",point:"3644"},
+
+{pos:"11",
+name:"UAE" ,p:"PAKISTAN",rate:"192",point:"4030"},
+
+{pos:"12",
+name:"ZIMBABWE" ,p:"PAKISTAN",rate:"188",point:"5631"},
+
+{pos:"13",
+name:"NEPAL" ,p:"PAKISTAN",rate:"185",point:"4624"},
+
+{pos:"14",
+name:"IRELAND" ,p:"PAKISTAN",rate:"184",point:"6439"},
+
+{pos:"15", 
+name:"NAMIBIA" ,p:"NEW ZEALAND",rate:"183",point:"5321"} ,
+
+{pos:"16", 
+name:"SCOTLAND" ,p:"SRI LANKA",rate:"183",point:"3475"},
+
+{pos:"17",
+name:"OMAN" ,p:"AUSTRALIA",rate:"170",point:"3238"},
+
+{pos:"18", 
+name:" NETHERLANDS" ,p:"INDIA",rate:"167",point:"2841"},
+
+{pos:"19", 
+name:"PAPUA NEW GUINEA" ,p:"AUSTRALIA",rate:"151",point:"2575"},
+
+{pos:"20",
+name:" SINGAPORE" ,p:"INDIA",rate:"149",point:"1194"},
+
+
+]
+
+ data.forEach(function(el)
+{
+    let tbody=document.querySelector("tbody")
+   let tr=document.createElement("tr")
+   tr.style.height="50px"
+   tr.style.boxShadow="rgba(0, 0, 0, 0.04) 0px 3px 5px"
+
+   let td1=document.createElement("td")
+   td1.innerText=el.pos
+   td1.style.width="70px"
+   td1.style.textAlign="center"
+//    td1.style.border="solid"
+
+   let td2=document.createElement("td")
+
+   td2.style.width="40px"
+//    td2.style.border="solid"
+
+  
+
+   let td4=document.createElement("td")
+let h3=document.createElement("p")
+     h3.innerText=el.name
+     td4.style.lineHeight="0px"
+     td4.style.width="240px"
+     td4.style.fontSize="18px"
+    td4.append(h3)
+    // td4.style.border="solid"
+   
+   
+
+   let td5=document.createElement("td")
+   td5.innerText=el.rate
+   td5.style.textAlign="center"
+//    td5.style.border="solid"
+
+   let td6=document.createElement("td")
+   td6.innerText=el.point
+//    td6.style.border="solid"
+   td6.style.textAlign="center"
+  
+
+tr.append(td1,td2,td4,td5,td6)
+tbody.append(tr)
+})
+
+
+
+
+
+
+// right
+
+let data2=
+[
+    {
+       img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c236068/west-indies-pacers-picked-dup.jpg",
+       line:"Bangladesh shot down for 103 despite Shakib fifty" ,
+       time:"23m ago"
+     },
+
+     {
+        img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c236067/the-series-is-now-level-at-1-1.jpg",
+    line:"Spirited Sri Lanka level series",
+     time:"1h ago"    ,   },
+
+     {
+        img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c236065/usa-won-the-contest-by-39-runs.jpg",
+    line:"Clinical USA edge past Nepal",
+     time:"2h ago"    ,   },
+
+     {
+        img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c236064/roach-struck-with-the-second-b.jpg",
+    line:"Pacers rattle Bangladesh in Antigua",
+     time:"2h ago"    ,   },
+
+     {
+        img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c236055/india-pulled-one-back-in-vizag.jpg",
+    line:"Buoyed India aim for series decider",
+     time:"3h ago"    ,   },
+
+     {
+        img:"https://www.cricbuzz.com/a/img/v1/100x77/i1/c236047/porterfield-retires-as-the-thi.jpg",
+    line:"William Porterfield announces retirement from international cricket",
+     time:"4h ago"    ,   },
+
+]
+
+
+data2.forEach(function(el)
+{
+    let fath=document.createElement("div")
+    fath.setAttribute("id","content")
+   let parent= document.createElement("div")
+   parent.setAttribute("id","rightin")
+   
+
+   let div= document.createElement("div")
+  let img= document.createElement("img")
+  img.setAttribute("src",el.img)
+
+  let div2= document.createElement("div")
+  div2.style.marginLeft="8px"
+
+  let line1=document.createElement("p")
+  line1.innerText=el.line
+  line1.style.fontSize="18px"
+//   line1.style.lineHeight="0px"
+
+  let tim=document.createElement("p")
+  tim.innerText=el.time
+
+  div.append(img)
+  div2.append(line1,tim)
+  parent.append(div,div2)
+  fath.append(parent)
+  document.querySelector("#right").append(fath)
+})
+  let but=document.createElement("button")
+  but.innerText="Show More"
+  but.setAttribute("id","but")
+  document.querySelector("#right").append(but)
+
+
+
+
+
+
+
+
+  let ad= document.querySelector("#test")
+ ad.addEventListener("click",fun)
+
+ function fun()
+ {
+  window.location.href="team.html"
+ }
+
+ let ad2= document.querySelector("#odi")
+ ad2.addEventListener("click",fun2)
+
+ function fun2()
+ {
+    window.location.href="teamodi.html"
+ }
+
+                                                // batting ,bolling ,allrounder ,team
+let trans1=document.querySelector("#bat")
+trans1.addEventListener("click",t1)
+
+function t1()
+{
+    window.location.href="../batting/batting.html"
+}
+
+
+let trans2=document.querySelector("#bol")
+trans2.addEventListener("click",t2)
+
+function t2()
+{
+    // location.replace("../bowling/bowling.html")
+   window.location.href="../bowling/bowling.html"
+}
+
+
+let trans3=document.querySelector("#rounder")
+trans3.addEventListener("click",t3)
+
+function t3()
+{
+    window.location.href="../rounder/rounder.html"
+}
+
+
+let trans4=document.querySelector("#team")
+trans4.addEventListener("click",t4)
+
+function t4()
+{
+    window.location.href="../team/team.html"
+}
+
+
+</script>
