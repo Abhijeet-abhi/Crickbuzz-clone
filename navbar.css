@@ -28,6 +28,12 @@
         margin: 0px;
         padding: 19px 6px;
      }
+     /* #top>#up>li>a:hover{
+        background-color: red;
+     }
+     #top>#up>li>#cb_logo_10>img:hover{
+        background-color: transparent;
+     } */
   
      #signup:hover{
          background-color: #009270 ;
