@@ -33,3 +33,75 @@ function signout(){
     localStorage.removeItem("cickbuzzuser");
     window.location.href = "signup.html";
 }
+
+
+
+// Shedule Page navbar
+
+
+
+let submenus = [
+    {
+        name:"Current Matches",
+        url:"currentmath"
+    },
+    {
+        name:"Current & Future Series",
+        url:"currentandfuture"
+    },
+    {
+        name:"Matches By Day",
+        url:"matchdaybyday"
+    },{
+        name:"Teams",
+        url:"teams"
+    },
+    {
+        name:"Series Archive",
+        url:"series"
+    }
+];
+
+let submenu =document.getElementById("submenu");
+submenus.forEach(function(el, i){
+    let a = document.createElement("a");
+    let display = document.getElementById(el.url);
+    a.innerText = el.name;
+    if(el.name=="Matches By Day"){
+        a.setAttribute("class","selected");
+        
+        display.setAttribute("class", "show");
+    }else{
+        display.setAttribute("class", "hide");
+    }
+    a.addEventListener("click", function(){
+        loadPage(el);
+    })
+    submenu.append(a);
+
+})
+
+function loadPage(el){
+    let load = document.getElementById("pageLoadSection");
+    let selectedMune = document.querySelectorAll("#submenu>a");
+    let display = document.getElementById(el.url);
+    let  hide = document.querySelector(".show");
+
+    selectedMune.forEach(function(el1){
+
+        if(el1.innerText==el.name){
+            el1.setAttribute("class", "selected");
+        }else{
+
+            el1.removeAttribute("class", "selected");
+
+        }
+    })
+    
+    display.removeAttribute("class", "hide");
+    display.setAttribute("class", "show");
+    hide.removeAttribute("class", "show");
+    hide.setAttribute("class", "hide");
+
+    
+}
