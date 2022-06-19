@@ -14,7 +14,7 @@ if(userstatus!==true){
     let p2 = document.createElement("p");
     
     let accountlink = document.createElement("a");
-    accountlink.setAttribute("href", "reguser.html")
+    accountlink.setAttribute("href", "home.html")
     accountlink.innerText = "My Account";
     p.append(accountlink);
 
